@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 505px;
+  min-width: 300px;
+  margin-right: 50px;
+  margin-left: 15px;
+  font-family: 'Roboto-regular';
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.discount {
+  display: block;
+  position: absolute;
+  width: 95px;
+  height: 30px;
+  background-color: #28AADC;
+  padding-top: 10px;
+  margin-top: 30px;
+  margin-left: -15px;
+}
+
+.discount p {
+  display: inline;
+  font-family: Roboto;
+  padding: 0 20px;
+  font-weight: bold;
+}
+
+.img {
+  width: 300px;
+  height: 50%;
+  background-color: #111111;
+}
+
+.details {
+  background-color: #222222;
+  color: white;
+  font-family: Roboto;
+  padding: 0px 15px 15px 15px;
+}
+
+.details h3 {
+  margin-top: 10px;
+}
+
+.details section p:first-child {
+  color: #777777;
+  font-weight: 300;
+}
+
+.buy {
+  display: inline;
+  margin-left: 130px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: #44D62C;
+}
+
+.buy p {
+  font-weight: bolder;
+  margin: 0;
+}
