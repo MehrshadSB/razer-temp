@@ -1,0 +1,40 @@
+.container {
+  width: 1250px;
+  margin: auto;
+  margin-top: 86px;
+}
+
+.container ul {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: white;
+  list-style: none;
+
+}
+
+.container img {
+  display: block;
+  margin: auto;
+  height: 100%;
+  line-height: 100%;
+}
+
+.container ul li {
+  width: 100px;
+  height: 75px;
+}
+
+.container p {
+  font-family: Roboto;
+  font-weight: 200;
+  font-size: 0.9rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.container p:hover {
+  color: #44D62C;
+  text-shadow: 0px 0px 7px #44D62C;
+}

@@ -5,7 +5,10 @@ function Header() {
       <nav className={style.navigator}>
         <ul>
           <li>
-            <img src="/Icons/razer-logo.svg"  className={style.icon}/>
+            <img
+              src="/Icons/razer-logo.svg"
+              className={style.logo}
+            />
           </li>
           <li className={style.menu}>Shop</li>
           <li className={style.menu}>PC</li>
@@ -15,8 +18,12 @@ function Header() {
           <li className={style.menu}>Gold</li>
           <li className={style.menu}>Community</li>
           <li className={style.menu}>Support</li>
-          <li></li>
-          <li></li>
+          <li>
+            <img src="/Icons/search.svg"  className={`${style.search} ${style.icons}`}/>
+          </li>
+          <li>
+            <img src="/Icons/shopping-cart.svg"  className={`${style.search} ${style.icons}`}/>
+          </li>
         </ul>
       </nav>
     </header>
