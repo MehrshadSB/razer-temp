@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #999999;
+      }
+    </style>
+  </defs>
+  <title>icon library pixel v02</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <path class="cls-1" d="M16,30A14,14,0,1,1,30,16,14,14,0,0,1,16,30ZM16,3.06A12.94,12.94,0,1,0,28.94,16,12.95,12.95,0,0,0,16,3.06Z"/>
+    <g>
+      <path class="cls-1" d="M10.18,9l-1,2.47V21.87h3.66v2h1.85l1.94-2h2.86l3.81-3.81V9ZM22,17.57l-2.12,2.14h-3.5l-2,2v-2h-3V10.38H22Z"/>
+      <rect class="cls-1" x="14.98" y="12.89" width="1.17" height="3.82"/>
+      <rect class="cls-1" x="18.47" y="12.89" width="1.17" height="3.82"/>
+    </g>
+  </g>
+</svg>

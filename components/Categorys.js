@@ -2,7 +2,7 @@ import api from "@/services/api";
 import style from "./categoryStyle.module.css";
 import { useQuery } from "@tanstack/react-query";
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const categorys = await api.get(
     "/product/productCategory/"
   );

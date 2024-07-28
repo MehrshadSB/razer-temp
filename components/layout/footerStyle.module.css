@@ -1,0 +1,133 @@
+.footer li:hover {
+  text-decoration: underline;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.footer {
+  padding: 0;
+  margin: 0;
+  margin-top: 1000px;
+  max-width: 100%;
+  height: 400px;
+  background-color: #111111;
+}
+
+.main {
+  height: 340px;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr;
+}
+
+.container {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  margin-top: 20px;
+}
+
+.container div {
+  height: 300px;
+  width: 179px;
+  position: relative;
+  font-family: Roboto;
+  min-height: auto;
+  max-width: 100%;
+  min-width: auto;
+  font-weight: 200px;
+  font-weight: 400;
+}
+
+.list {
+  list-style-type: none;
+  font-size: 12px;
+  display: block;
+  padding-inline-start: 0px;
+
+}
+
+.list li:first-child {
+  color: white !important;
+}
+
+.list li {
+  color: #999;
+  font-size: 12px;
+  padding-bottom: 12px;
+  line-height: 18px;
+}
+
+.icon {
+  width: 28px;
+}
+
+.icons {
+  padding: 0 !important;
+}
+
+.lastDiv {
+  width: 300px !important;
+  color: #73E161;
+  margin-top: 20px;
+  font-family: 'RazerF5';
+  font-weight: 300;
+  font-size: 0.9rem;
+  text-align: right;
+}
+
+.sep {
+  width: 1200px;
+  height: 1px;
+  display: block;
+  margin: auto;
+  background-color: #555555;
+}
+
+.footerBottom {
+  display: flex;
+  flex-direction: row;
+  color: #999999;
+  width: 1200px;
+  margin: auto;
+  font-family: Roboto;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.legalTerm ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0;
+}
+
+.legalTerm ul li {
+  padding: 0 10px;
+}
+
+.copyright {
+  line-height: 38px;
+  padding-right: 38px;
+}
+
+.location {
+  margin-left: auto;
+}
+
+.changeLocation {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.changeLocation li {
+  padding: 0 0 0 10px;
+}
+
+.changeLocation li:first-child {
+  color: white;
+  font-weight: 600;
+}
