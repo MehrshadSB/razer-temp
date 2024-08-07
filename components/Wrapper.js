@@ -1,7 +1,7 @@
 import Cards from "./Cards";
 import styles from "./wrapperStyle.module.css";
 
-function Wrapper() {
+function Wrapper({ products }) {
   const scrolll = () => {
     let left = document.querySelector(".scroll-image");
     left.scrollBy(-1400, 0);
@@ -44,14 +44,9 @@ function Wrapper() {
         <div
           className={`${styles.scrollImage} scroll-image`}
         >
-          <Cards />
-          <Cards />
-          <Cards />
-          <Cards />
-          <Cards />
-          <Cards />
-          <Cards />
-          <Cards />
+          {products.map((product) => (
+            <Cards key={product.id} product={product} />
+          ))}
         </div>
       </div>
       <div>

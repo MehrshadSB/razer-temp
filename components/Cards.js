@@ -1,44 +1,60 @@
 import { useEffect } from "react";
 import styles from "./CardsStyle.module.css";
+import { sp } from "@/services/replaceNumber";
 
-function Cards() {
-  useEffect(() => {
-    console.log("Re-rendered");
-  }, []);
+function Cards({ product }) {
+  console.log(product);
 
+  const discount = product.discount_amount / 100;
+  const finalPrice =
+    product.price - product.price * discount;
+  console.log(finalPrice);
+  
   return (
     <div className={styles.container}>
-      <div className={styles.discount}>
-        <p>7% OFF</p>
-      </div>
+      {product.discount_amount ? (
+        <div className={styles.discount}>
+          <p>{product.tags[0]}</p>
+        </div>
+      ) : product.tags[0] === "NEW" ? (
+        <div className={styles.new}>
+          <p>{product.tags[0]}</p>
+        </div>
+      ) : product.tags[0] === "ONLY AT RAZER" ? (
+        <div className={styles.onlyAtRazerCon}>
+          <p>{product.tags[0]}</p>
+        </div>
+      ) : null}
+
       <div className={styles.img}>
-        <img src="https://assets3.razerzone.com/2qIEzE6PovR0jcvcBUI6HVJQVKM=/300x300/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fhaf%2Fh7b%2F9720377704478%2Fblade14-p10-black-500x500.png" />
+        <img src={product.image} />
       </div>
       <div className={styles.details}>
-        <h3>New Razer Blade 14</h3>
         <section>
-          <p>
-            Ultra-powerful, ultra-portable 14-inch gaming
-            laptop with AMD Ryzen™ 9 8945HS processor and
-            NVIDIA® GeForce RTX™ 40 Series graphics
-          </p>
-          <p>
-            Now available in a sleek mercury or matte black
-            finish.
-          </p>
+          <h3>{product.name}</h3>
+          <p>{product.description}</p>
         </section>
-        <span>
-          From
-          <br />
-          US$2,499.99
-          <br />
-          US$2,699.99
-        </span>
-        <button className={styles.buy}>
-          <p>Buy</p>
-        </button>
+        <div className={styles.action}>
+          {product.discount_amount ? (
+            <div>
+              From
+              <span>US${product.price}</span>
+              <span>US${sp(finalPrice)}</span>
+            </div>
+          ) : (
+            <div>
+              <span className={styles.price}>
+                US${product.price}
+              </span>
+            </div>
+          )}
+          <div>
+            <button className={styles.buy}>
+              <p>BUY</p>
+            </button>
+          </div>
+        </div>
       </div>
-      
     </div>
   );
 }

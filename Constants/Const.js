@@ -52,4 +52,15 @@ const followUs = [
   { id: 6, image: "/Icons/discord.svg" },
 ];
 
-export { shop, explore, support, company, followUs };
+const header = [
+  { name: "Shop", id: 1 },
+  { name: "PC", id: 2 },
+  { name: "Console", id: 3 },
+  { name: "Mobile", id: 4 },
+  { name: "Lifestyle", id: 5 },
+  { name: "Gold", id: 6 },
+  { name: "Community", id: 7 },
+  { name: "Support", id: 8 },
+];
+
+export { shop, explore, support, company, followUs, header };

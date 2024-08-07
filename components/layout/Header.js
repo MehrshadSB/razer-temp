@@ -1,4 +1,6 @@
 import style from "./headerStyle.module.css";
+import { header } from "@/Constants/Const";
+
 function Header() {
   return (
     <header className={style.header}>
@@ -10,19 +12,20 @@ function Header() {
               className={style.logo}
             />
           </li>
-          <li className={style.menu}>Shop</li>
-          <li className={style.menu}>PC</li>
-          <li className={style.menu}>Console</li>
-          <li className={style.menu}>Mobile</li>
-          <li className={style.menu}>Lifestyle</li>
-          <li className={style.menu}>Gold</li>
-          <li className={style.menu}>Community</li>
-          <li className={style.menu}>Support</li>
+          {header.map((item) => (
+            <li key={item.id} className={style.menu}>{item.name}</li>
+          ))}
           <li>
-            <img src="/Icons/search.svg"  className={`${style.search} ${style.icons}`}/>
+            <img
+              src="/Icons/search.svg"
+              className={`${style.search} ${style.icons}`}
+            />
           </li>
           <li>
-            <img src="/Icons/shopping-cart.svg"  className={`${style.search} ${style.icons}`}/>
+            <img
+              src="/Icons/shopping-cart.svg"
+              className={`${style.search} ${style.icons}`}
+            />
           </li>
         </ul>
       </nav>

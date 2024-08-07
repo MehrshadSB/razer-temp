@@ -1,9 +1,9 @@
 .container {
   display: flex;
   flex-direction: column;
-  min-height: 505px;
   min-width: 300px;
-  margin-right: 50px;
+  height: 540px;
+  margin-right: 20px;
   margin-left: 15px;
   font-family: 'Roboto-regular';
   cursor: pointer;
@@ -14,9 +14,8 @@
   display: block;
   position: absolute;
   width: 95px;
-  height: 30px;
+  height: 38px;
   background-color: #28AADC;
-  padding-top: 10px;
   margin-top: 30px;
   margin-left: -15px;
 }
@@ -26,39 +25,115 @@
   font-family: Roboto;
   padding: 0 20px;
   font-weight: bold;
+  line-height: 38px;
 }
 
 .img {
   width: 300px;
-  height: 50%;
+  height: 300px;
+}
+
+.img img {
+  width: 300px;
+  height: 300px;
   background-color: #111111;
 }
 
 .details {
   background-color: #222222;
+  height: 50%;
   color: white;
   font-family: Roboto;
   padding: 0px 15px 15px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.details h3 {
-  margin-top: 10px;
-}
-
-.details section p:first-child {
+.details section p {
   color: #777777;
   font-weight: 300;
 }
 
 .buy {
   display: inline;
-  margin-left: 130px;
   padding: 5px 10px;
-  border-radius: 10px;
+  border-radius: 7px;
   background-color: #44D62C;
+  margin-top: 25px;
+  border: 0.5px solid #111111;
+}
+
+.buy:hover {
+  background-color: #73E161;
+
 }
 
 .buy p {
-  font-weight: bolder;
   margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.details h3 {
+  font-size: 1rem;
+}
+
+.action div {
+  font-size: 0.9rem;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.action {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.price {
+  margin-top: 32px;
+}
+
+.onlyAtRazerCon {
+  display: block;
+  position: absolute;
+  width: 150px;
+  height: 34px;
+  background-color: #FF9C07;
+  margin-top: 34px;
+  margin-left: -15px;
+  text-align: center;
+}
+
+.onlyAtRazerCon p {
+  display: inline;
+  font-family: Roboto;
+  padding: 0 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 34px;
+}
+
+.new {
+  display: block;
+  position: absolute;
+  width: 85px;
+  height: 34px;
+  background-color: #44D62C;
+  margin-top: 34px;
+  margin-left: -15px;
+  text-align: center;
+}
+
+.new p {
+  display: inline;
+  font-family: Roboto;
+  padding: 0 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 34px;
 }
