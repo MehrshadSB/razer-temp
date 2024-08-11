@@ -1,15 +1,11 @@
-import { useEffect } from "react";
 import styles from "./CardsStyle.module.css";
 import { sp } from "@/services/replaceNumber";
 
 function Cards({ product }) {
-  console.log(product);
-
   const discount = product.discount_amount / 100;
   const finalPrice =
     product.price - product.price * discount;
-  console.log(finalPrice);
-  
+
   return (
     <div className={styles.container}>
       {product.discount_amount ? (
@@ -38,13 +34,15 @@ function Cards({ product }) {
           {product.discount_amount ? (
             <div>
               From
-              <span>US${product.price}</span>
-              <span>US${sp(finalPrice)}</span>
+              <span>US ${sp(finalPrice)}</span>
+              <span style={{ color: "#949996" }}>
+                <s>US ${sp(product.price)}</s>
+              </span>
             </div>
           ) : (
             <div>
               <span className={styles.price}>
-                US${product.price}
+                US${sp(product.price)}
               </span>
             </div>
           )}

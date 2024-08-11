@@ -1,4 +1,3 @@
-import api from "@/services/api";
 import styles from "./storeStyle.module.css";
 import Wrapper from "./Wrapper";
 
@@ -6,7 +5,7 @@ function Store({ products }) {
   const freshOffTheLine = products.filter((product) =>
     product.tags.includes("FRESH OFF THE LINE")
   );
-
+  
   return (
     <section className={styles.container}>
       <div className={styles.header}>

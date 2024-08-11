@@ -17,11 +17,12 @@ function Categorys(props) {
     initialData: props.categorys,
   });
 
+
   return (
     <div className={style.container}>
       <ul>
         {categorys?.map((category) => (
-          <li id={category.id}>
+          <li key={category.id + 12}>
             <img src={category.image} />
             <p>{category.title}</p>
           </li>

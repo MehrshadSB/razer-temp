@@ -26,6 +26,7 @@ function Wrapper({ products }) {
     scrollr.style.opacity = "0";
   };
 
+
   return (
     <div
       className={styles.wrapper}
