@@ -63,6 +63,29 @@ const header = [
   { name: "Support", id: 8 },
 ];
 
+const tile = [
+  {
+    title: "RazerStore Rewards",
+    image: "/Tile/RazerStoreRewards.webp",
+  },
+  {
+    title: "Razer Customs",
+    image: "/Tile/RazerCustoms.jpg",
+  },
+  {
+    title: "Purchase Programs",
+    image: "/Tile/PurchasePrograms.jpg",
+  },
+  {
+    title: "Razer Gift Cards",
+    image: "/Tile/RazerGiftCards.webp",
+  },
+  {
+    title: "Razer Care",
+    image: "/Tile/RazeCare.webp",
+  },
+];
+
 export {
   shop,
   explore,
@@ -70,4 +93,5 @@ export {
   company,
   followUs,
   header,
+  tile
 };

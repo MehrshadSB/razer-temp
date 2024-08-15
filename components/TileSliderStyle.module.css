@@ -1,0 +1,105 @@
+.wrapper {
+  height: 250px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: none;
+  margin-top: 100px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  justify-content: space-between;
+  z-index: 10;
+  margin-top: 100px;
+  margin-left: 30px;
+}
+
+
+.wrapper .scroller {
+  background-color: none;
+  background: none;
+  border: none;
+  opacity: 0;
+}
+
+.scrollRight {
+  padding-left: 1200px;
+}
+
+.scrollr2 img {}
+
+.scroller:hover {
+  opacity: 1;
+}
+
+.wrapper .scroller img {
+  width: 30px;
+  height: 54px;
+}
+
+.cover {
+  position: relative;
+  min-width: 90%;
+  height: 250px;
+}
+
+.scrollImage::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.scrollImage {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  overflow: auto;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+.cover {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  overflow: auto;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+.cover::-webkit-scrollbar {
+  display: none;
+}
+
+.cards {
+  width: 250px;
+  height: 250px;
+  padding: 0 20px;
+  color: white;
+}
+
+.title {
+  font-family: Roboto;
+  background-color: #222222;
+  width: 250px;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+}
+
+.cards h4 {
+  padding: 0;
+  margin: 0;
+  line-height: 50px;
+  margin-left: 20px;
+}
+
+.cards img {
+  width: 250px;
+  height: 250px;
+}

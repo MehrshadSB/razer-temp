@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffffff;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #ffffff;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <title>icon library pixel v02</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <path class="cls-1" d="M16,30A14,14,0,0,1,6.1,6.1,14,14,0,1,1,16,30ZM16,3.06A12.94,12.94,0,0,0,3.06,16,12.94,12.94,0,0,0,16,28.94,12.94,12.94,0,0,0,16,3.06Z"/>
+    <polygon class="cls-2" points="16 8.51 18.35 13.27 23.6 14.03 19.8 17.73 20.7 22.96 16 20.49 11.3 22.96 12.2 17.73 8.4 14.03 13.65 13.27 16 8.51"/>
+  </g>
+</svg>

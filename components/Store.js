@@ -1,23 +1,16 @@
 import styles from "./storeStyle.module.css";
 import Wrapper from "./Wrapper";
 
-function Store({ products }) {
-  const freshOffTheLine = products.filter((product) =>
-    product.tags.includes("FRESH OFF THE LINE")
-  );
-  
+function Store({ products, title, details }) {
   return (
     <section className={styles.container}>
       <div className={styles.header}>
-        <h2>FRESH OFF THE LINES</h2>
+        <h2>{title}</h2>
         <div className={styles.paragraphs}>
-          <p>
-            Check out our latest releases to secure the most
-            up-to-date upgrades for your setup
-          </p>
+          <p>{details}</p>
         </div>
       </div>
-      <Wrapper products={freshOffTheLine} />
+      <Wrapper products={products} />
     </section>
   );
 }

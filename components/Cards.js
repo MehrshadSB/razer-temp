@@ -42,7 +42,7 @@ function Cards({ product }) {
           ) : (
             <div>
               <span className={styles.price}>
-                US${sp(product.price)}
+                US ${sp(product.price)}
               </span>
             </div>
           )}

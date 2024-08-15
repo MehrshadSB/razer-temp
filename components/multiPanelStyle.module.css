@@ -1,0 +1,39 @@
+.container {
+  max-width: 1130px;
+  color: #8f8f8f;
+  font-family: Roboto;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.container h2 {
+  text-align: center;
+  color: #44D62C;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.title {
+  font-weight: bolder;
+  padding-bottom: 10px;
+  font-size: 24px;
+  color: white;
+}
+
+.sections ul {
+  list-style-type: none;
+  line-height: 25px;
+  text-align: center;
+}
+
+.sections img {
+  width: 65px;
+  height: 65px;
+  padding-bottom: 20px;
+}
+
+.sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
