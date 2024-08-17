@@ -5,7 +5,8 @@ import Slider from "@/components/Slider";
 import Store from "@/components/Store";
 import TileSlider from "@/components/TileSlider";
 import api from "@/services/api";
-import React from "react";
+import { useState } from "react";
+import { v4 } from "uuid";
 
 function index({ products }) {
   const freshOffTheLine = products.filter((product) =>
@@ -18,6 +19,10 @@ function index({ products }) {
 
   const onlyAtRazer = products.filter((product) =>
     product.tags.includes("ONLY AT RAZER")
+  );
+
+  const finalRoundGear = products.filter((product) =>
+    product.tags.includes("FINAL ROUND GEAR")
   );
 
   return (
@@ -46,6 +51,13 @@ function index({ products }) {
         }
       />
       <TileSlider />
+      <Store
+        products={finalRoundGear}
+        title={"FINAL ROUND GEAR"}
+        details={
+          "Get your upgrades from our last-chance selection of hardware"
+        }
+      />
       <MultiPanel />
     </Layout>
   );

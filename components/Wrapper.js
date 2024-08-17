@@ -1,15 +1,29 @@
+import { useRef } from "react";
 import Cards from "./Cards";
 import styles from "./wrapperStyle.module.css";
 
 function Wrapper({ products }) {
+  const parentDiv = useRef(null);
+
   const scrolll = () => {
-    let left = document.querySelector(".scroll-image");
-    left.scrollBy(-1400, 0);
+    console.log(parentDiv);
+
+    if (parentDiv.current) {
+      parentDiv.current.scrollBy({
+        left: -1400,
+        behavior: "smooth",
+      });
+    }
   };
 
   const scrollr = () => {
-    let left = document.querySelector(".scroll-image");
-    left.scrollBy(1400, 0);
+    console.log(parentDiv);
+    if (parentDiv.current) {
+      parentDiv.current.scrollBy({
+        left: 1400,
+        behavior: "smooth",
+      });
+    }
   };
 
   const revealButtons = () => {
@@ -25,7 +39,6 @@ function Wrapper({ products }) {
     const scrollr = document.querySelector(".scrollr");
     scrollr.style.opacity = "0";
   };
-
 
   return (
     <div
@@ -43,14 +56,15 @@ function Wrapper({ products }) {
       </div>
       <div className={styles.cover}>
         <div
-          className={`${styles.scrollImage} scroll-image`}
+          className={`${styles.scrollImage}`}
+          ref={parentDiv}
         >
           {products.map((product) => (
             <Cards key={product.id} product={product} />
           ))}
         </div>
       </div>
-      <div>
+      <div className={styles.arrowsR}>
         <button
           className={`${styles.scroller} scrollr`}
           onClick={() => scrollr()}

@@ -3,7 +3,9 @@
   align-items: center;
   justify-content: space-between;
   background-color: none;
-  margin-top: 100px;
+  margin: auto;
+  margin-top: 80px;
+  margin-left: 60px;
 }
 
 .buttons {
@@ -25,7 +27,7 @@
 }
 
 .scrollRight {
-  padding-left: 1200px;
+  padding-left: 1150px;
 }
 
 .scrollr2 img {}
