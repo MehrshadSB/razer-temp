@@ -1,5 +1,5 @@
 .container {
-  width: 1250px;
+  max-width: 1200px;
   margin: auto;
   margin-top: 60px;
 }
@@ -11,7 +11,6 @@
   justify-content: space-around;
   color: white;
   list-style: none;
-
 }
 
 .container img {
@@ -37,4 +36,11 @@
 .container p:hover {
   color: #44D62C;
   text-shadow: 0px 0px 7px #44D62C;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    margin-top: 60px;
+  }
+
 }

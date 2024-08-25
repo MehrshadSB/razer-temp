@@ -1,4 +1,5 @@
 .container {
+  width: 100%;
   height: 100%;
   position: relative;
 }
@@ -80,4 +81,12 @@
 
 .animation {
   transition: 0.8s linear;
+}
+
+@media (max-width: 1200px) {
+  .images {
+    width: 100vw;
+  }
+
+
 }

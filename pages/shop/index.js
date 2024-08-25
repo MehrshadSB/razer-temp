@@ -5,10 +5,10 @@ import Slider from "@/components/Slider";
 import Store from "@/components/Store";
 import TileSlider from "@/components/TileSlider";
 import api from "@/services/api";
-import { useState } from "react";
-import { v4 } from "uuid";
 
 function index({ products }) {
+  console.log();
+
   const freshOffTheLine = products.filter((product) =>
     product.tags.includes("FRESH OFF THE LINE")
   );

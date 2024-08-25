@@ -6,6 +6,10 @@ function Cards({ product }) {
   const finalPrice =
     product.price - product.price * discount;
 
+  const buyHandler = () => {
+   
+  };
+
   return (
     <div className={styles.container}>
       {product.discount_amount ? (
@@ -47,7 +51,10 @@ function Cards({ product }) {
             </div>
           )}
           <div>
-            <button className={styles.buy}>
+            <button
+              className={styles.buy}
+              onClick={buyHandler}
+            >
               <p>BUY</p>
             </button>
           </div>

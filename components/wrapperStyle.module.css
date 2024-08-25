@@ -1,6 +1,5 @@
 .wrapper {
-  min-width: 1300px;
-  height: 540px;
+  
   display: flex;
   align-items: center;
   justify-content: space-between;

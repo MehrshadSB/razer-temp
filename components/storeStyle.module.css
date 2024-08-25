@@ -1,5 +1,4 @@
 .container {
-  width: 1300px;
   margin: auto;
   font-family: Roboto;
   margin-top: 100px;
@@ -10,14 +9,19 @@
   margin: auto;
   color: #FFFFFF;
   margin-bottom: 5px;
+
 }
 
 .header h2 {
   margin: 0;
+  display: flex;
+
 }
 
 .paragraphs p {
   color: #ffffff85;
   font-size: 1.2rem;
   margin: 0;
+  display: flex;
+
 }

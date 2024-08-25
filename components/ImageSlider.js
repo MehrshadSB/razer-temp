@@ -10,6 +10,7 @@ function ImageSlider({ slides }) {
     backgroundPosition: "center",
     backgroundSize: "cover",
     backgroundImage: `url(${slides[currentIndex]})`,
+    positon: "fixed"
   };
 
   const revealButtons = () => {
@@ -56,7 +57,10 @@ function ImageSlider({ slides }) {
       >
         <img src="/Icons/arrow-left.png" alt="" />
       </div>
-      <div style={slideStyle} className={styles.animation}>
+      <div
+        style={slideStyle}
+        className={`${styles.animation} images`}
+      >
         <div
           className={styles.content}
           style={

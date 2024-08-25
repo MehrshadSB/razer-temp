@@ -11,4 +11,9 @@ body {
   margin: 0;
   box-sizing: border-box;
   background-color: black;
+  margin: auto;
+}
+
+@media (max-width: 1200px) {
+ 
 }
