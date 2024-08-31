@@ -16,12 +16,11 @@
   height: 340px;
   max-width: 1200px;
   margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr;
+  display: flex;
+  flex-direction: row;
 }
 
 .container {
-  width: 95%;
   margin: auto;
   display: flex;
   margin-top: 20px;
@@ -58,16 +57,9 @@
   line-height: 18px;
 }
 
-.icon {
-  width: 28px;
-}
 
-.icons {
-  padding: 0 !important;
-}
 
 .lastDiv {
-  width: 300px !important;
   color: #73E161;
   margin-top: 20px;
   font-family: 'RazerF5';
@@ -87,12 +79,18 @@
 .footerBottom {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   color: #999999;
   width: 1200px;
   margin: auto;
   font-family: Roboto;
   font-size: 12px;
   margin-top: 10px;
+}
+
+.firstTwo {
+  display: flex;
+  flex-direction: row;
 }
 
 .legalTerm ul {
@@ -111,10 +109,6 @@
   padding-right: 38px;
 }
 
-.location {
-  margin-left: auto;
-}
-
 .changeLocation {
   display: flex;
   flex-direction: row;
@@ -128,4 +122,106 @@
 .changeLocation li:first-child {
   color: white;
   font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    width: 100%;
+  }
+
+  .main {
+    width: 95%;
+  }
+
+  .sep {
+    width: 95%;
+  }
+
+  .lastDiv {
+    width: 20%;
+  }
+
+  .footerBottom {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 987px) and (max-width: 1041px) {
+
+  .footerBottom {
+    margin: auto;
+    width: 95%;
+  }
+
+  .copyrightDiv {
+    flex-grow: 1;
+    padding-right: 20px;
+  }
+
+  .copyright {
+    padding: 0;
+  }
+
+  .legalTerm {
+    flex-grow: 1;
+  }
+
+  .legalTerm ul {
+    flex-grow: 1;
+
+  }
+
+  .legalTerm ul li {
+    padding: 0 2px;
+  }
+
+  .changeLocation {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 987px) {
+  .container {
+    min-width: 10vw;
+  }
+
+  .legalTerm ul li {
+    padding: 0;
+  }
+
+  .lastDiv {
+    width: 10vw;
+  }
+}
+
+@media (max-width: 907px) {
+
+  .copyrightDiv {
+    flex-grow: 2;
+  }
+
+  .firstTwo {
+    display: block;
+  }
+
+  .footer {
+    height: 100%;
+  }
+
+  .legalTerm {
+    flex-grow: 0;
+  }
+
+  .legalTerm ul li {
+    padding: 0 1px;
+  }
+
+}
+
+@media (max-width: 760px) {
+  .footer {
+    display: none;
+  }
+
 }

@@ -6,7 +6,9 @@ function Header() {
     <header className={style.header}>
       <nav className={style.navigator}>
         <ul>
-          <li className={style.hamburgerMenu}></li>
+          <li className={style.hamburgerMenu}>
+            <img src="/Icons/menu-open.png" alt="" />
+          </li>
           <li>
             <img
               src="/Icons/razer-logo.svg"
@@ -18,10 +20,10 @@ function Header() {
               {item.name}
             </li>
           ))}
-          <li>
+          <li className={style.search}>
             <img
               src="/Icons/search.svg"
-              className={`${style.search} ${style.icons}`}
+              className={style.icons}
             />
           </li>
           <li>

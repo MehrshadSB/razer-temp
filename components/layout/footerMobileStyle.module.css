@@ -1,0 +1,152 @@
+@media screen and (max-width: 760px) {
+
+  #dropDownAnimation {
+    animation: moveFromTop 2s normal ease;
+  }
+
+  .dropDownDiv {
+    display: none;
+    width: 90%;
+    padding-top: 10px;
+  }
+
+  .dropDownDiv ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .dropDownDiv ul li {
+    padding-bottom: 20px;
+    color: #ffffffa4;
+  }
+
+  .MobileFooter {
+    width: 100vw;
+    min-height: 500px;
+    font-family: Roboto;
+    background-color: #111111;
+  }
+
+  .label div {
+    display: none;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 400;
+    padding: 0px 18px 20px 18px;
+  }
+
+  .main div label {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 54px;
+    border-bottom: 0.5px solid rgb(59, 59, 59);
+  }
+
+  .footer_toggle_icon::after {
+    content: "+";
+  }
+
+  .footer_toggle_icon {
+    font-size: 2rem;
+    font-family: "Roboto-Light";
+  }
+
+  .copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #fff;
+    font-weight: 300;
+    font-size: 0.75rem;
+    width: 90%;
+    line-height: 100%;
+    margin: auto;
+    padding-bottom: 20px;
+    border-bottom: 0.5px solid rgb(59, 59, 59);
+  }
+
+  .copyright span {
+    line-height: 34px;
+    font-weight: 500px;
+    margin-right: 10px;
+    font-weight: 500;
+  }
+
+  .legalTerm ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    color: rgba(255, 255, 255, 0.74);
+  }
+
+  .legalTerm ul li {
+    padding-right: 15px;
+  }
+
+  .location {
+    padding-top: 28px;
+  }
+
+  .location ul {
+    color: #fff;
+    font-weight: 300;
+    justify-content: center;
+    padding: 0;
+    font-size: 0.75rem;
+  }
+
+  .lastDiv {
+    color: #73E161;
+    margin-top: 20px;
+    font-family: 'RazerF5';
+    font-weight: 300;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .list {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .list li img {
+    padding-right: 8px;
+  }
+
+  .socialMedia {
+    width: 90%;
+    margin: auto;
+  }
+
+  .icon {
+    width: 28px;
+  }
+
+  .icons {
+    padding: 0 !important;
+  }
+}
+
+@media screen and (max-width: 705px) {
+  .copyright {
+    display: block;
+    text-align: center;
+  }
+
+  .legalTerm ul {
+    justify-content: center;
+  }
+}
+
+.DropDown {
+  padding-bottom: 320px !important;
+}

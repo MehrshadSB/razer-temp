@@ -7,8 +7,6 @@ import TileSlider from "@/components/TileSlider";
 import api from "@/services/api";
 
 function index({ products }) {
-  console.log();
-
   const freshOffTheLine = products.filter((product) =>
     product.tags.includes("FRESH OFF THE LINE")
   );

@@ -7,3 +7,9 @@
   font-family: 'RazerF5-Bold';
   src: url('/fonts/RazerF5-Bold.otf');
 }
+
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("/public/fonts/Roboto-Light.ttf") format("ttf");
+  font-style: normal;
+}
