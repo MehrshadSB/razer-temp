@@ -1,6 +1,26 @@
-.container {
-  width: 100%;
-  height: 100%;
+
+.swiper {
+  --swiper-pagination-color: #44D62C;
+  --swiper-pagination-bullet-inactive-color: #fefefe !important;
+  --swiper-pagination-bullet-inactive-opacity: 0.9;
+  --swiper-pagination-bullet-size: 12px;
+  --swiper-pagination-bullet-horizontal-gap: 15px;
+  --swiper-pagination-border: 1px solid black;
+  --swiper-navigation-color: #44D62C;
+  --swiper-navigation-sides-offset: 50px;
+  --swiper-navigation-size: 55px;
+  width: 1200px;
+  padding: 0;
+  margin: auto;
+}
+
+.swiper::-webkit-scrollbar {
+  display: none;
+}
+
+.images {
+  height: 250px;
+  width: 1400px;
   position: relative;
 }
 
@@ -20,11 +40,6 @@
   right: 32px;
   z-index: 1;
   cursor: pointer;
-}
-
-.container img {
-  width: 30px;
-  height: 54px;
 }
 
 .dotsContainerStyle {

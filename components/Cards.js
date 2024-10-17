@@ -1,13 +1,33 @@
 import styles from "./CardsStyle.module.css";
 import { sp } from "@/services/replaceNumber";
+import usePostProduct from "@/customHooks/useCarts";
+import { useRef } from "react";
 
 function Cards({ product }) {
   const discount = product.discount_amount / 100;
   const finalPrice =
     product.price - product.price * discount;
+  const post = usePostProduct();
+  const buyButton = useRef(null);
+  const doneButton = useRef(null);
 
-  const buyHandler = () => {
-   
+  const buyHandler = (id) => {
+    const data = { product: id, quantity: 1 };
+    const { postRes, loading, error } = post(
+      "/order/add-item/",
+      data
+    );
+
+    switch (loading) {
+      case true:
+        console.log({ postRes, loading, error });
+      case false:
+        buyButton.current.style.display = "none";
+        doneButton.current.style.display = "block";
+        break;
+      default:
+        break;
+    }
   };
 
   return (
@@ -53,9 +73,17 @@ function Cards({ product }) {
           <div>
             <button
               className={styles.buy}
-              onClick={buyHandler}
+              ref={buyButton}
+              onClick={() => buyHandler(product.id)}
             >
-              <p>BUY</p>
+              <p ref={buyButton}>BUY</p>
+            </button>
+            <button
+              className={styles.buy}
+              ref={doneButton}
+              style={{ display: "none" }}
+            >
+              <p>✔</p>
             </button>
           </div>
         </div>

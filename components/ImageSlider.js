@@ -1,5 +1,12 @@
 import { useState } from "react";
 import styles from "./imageSliderStyle.module.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 
 function ImageSlider({ slides }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -9,8 +16,7 @@ function ImageSlider({ slides }) {
     height: "100%",
     backgroundPosition: "center",
     backgroundSize: "cover",
-    backgroundImage: `url(${slides[currentIndex]})`,
-    positon: "fixed"
+    positon: "fixed",
   };
 
   const revealButtons = () => {
@@ -46,84 +52,131 @@ function ImageSlider({ slides }) {
   };
 
   return (
-    <div
-      className={styles.container}
-      onMouseLeave={() => hideButtons()}
-      onMouseEnter={() => revealButtons()}
-    >
-      <div
-        className={`${styles.leftArrowStyle} scrollll`}
-        onClick={goToNext}
+    // <div
+    //   className={styles.container}
+    //   onMouseLeave={() => hideButtons()}
+    //   onMouseEnter={() => revealButtons()}
+    // >
+    //   <div
+    //     className={`${styles.leftArrowStyle} scrollll`}
+    //     onClick={goToNext}
+    //   >
+    //     <img src="/Icons/arrow-left.png" alt="" />
+    //   </div>
+    //   <div
+    //     style={slideStyle}
+    //     className={`${styles.animation} images`}
+    //   >
+    //     <div
+    //       className={styles.content}
+    //       style={
+    //         currentIndex === 0
+    //           ? { display: "block" }
+    //           : { display: "none" }
+    //       }
+    //     >
+    //       <h2>CONQUER YOUR CAMPUS</h2>
+    //       <div>NEW BACK-TO-SCHOOL SPECIALS</div>
+    //       <ul>
+    //         <li>Shop Now</li>
+    //       </ul>
+    //     </div>
+    //     <div
+    //       className={`${styles.content} ${styles.basilisk}`}
+    //       style={
+    //         currentIndex === 1
+    //           ? { display: "block" }
+    //           : { display: "none" }
+    //       }
+    //     >
+    //       <h2>RAZERSTORE REWARDS GIVEAWAY</h2>
+    //       <div>WIN A RAZER BASILISK V3 PRO BUNDLE</div>
+    //       <ul>
+    //         <li>Join Now</li>
+    //       </ul>
+    //     </div>
+    //     <div
+    //       className={`${styles.content} ${styles.basilisk}`}
+    //       style={
+    //         currentIndex === 2
+    //           ? { display: "block" }
+    //           : { display: "none" }
+    //       }
+    //     >
+    //       <h2>RAZER | HELLO KITTY</h2>
+    //       <div>NOW AVAILABLE ON RAZER CUSTOMS</div>
+    //       <ul>
+    //         <li>Shop Now</li>
+    //       </ul>
+    //     </div>
+    //   </div>
+    //   <div
+    //     className={`${styles.rightArrowStyle} scrollrr`}
+    //     onClick={goToPrevious}
+    //   >
+    //     <img src="/Icons/arrow-right.png" alt="" />
+    //   </div>
+    //   <div className={styles.dotsContainerStyle}>
+    //     {slides.map((slide, slideIndex) => (
+    //       <div
+    //         className={styles.dotStyle}
+    //         onClick={() => goToSlide(slideIndex)}
+    //         key={slideIndex}
+    //         style={
+    //           currentIndex === slideIndex
+    //             ? { backgroundColor: "#44D62C" }
+    //             : { backgroundColor: "#CCCCCC" }
+    //         }
+    //       ></div>
+    //     ))}
+    //   </div>
+    // </div>
+    <div className={styles.container}>
+      <Swiper
+        modules={[Navigation, Pagination]}
+        spaceBetween={20}
+        slidesPerView={1}
+        navigation
+        pagination={{ clickable: true }}
+        scrollbar={{ draggable: true, hide: true }}
+        className={styles.swiper}
       >
-        <img src="/Icons/arrow-left.png" alt="" />
-      </div>
-      <div
-        style={slideStyle}
-        className={`${styles.animation} images`}
-      >
-        <div
-          className={styles.content}
-          style={
-            currentIndex === 0
-              ? { display: "block" }
-              : { display: "none" }
-          }
-        >
-          <h2>CONQUER YOUR CAMPUS</h2>
-          <div>NEW BACK-TO-SCHOOL SPECIALS</div>
-          <ul>
-            <li>Shop Now</li>
-          </ul>
-        </div>
-        <div
-          className={`${styles.content} ${styles.basilisk}`}
-          style={
-            currentIndex === 1
-              ? { display: "block" }
-              : { display: "none" }
-          }
-        >
-          <h2>RAZERSTORE REWARDS GIVEAWAY</h2>
-          <div>WIN A RAZER BASILISK V3 PRO BUNDLE</div>
-          <ul>
-            <li>Join Now</li>
-          </ul>
-        </div>
-        <div
-          className={`${styles.content} ${styles.basilisk}`}
-          style={
-            currentIndex === 2
-              ? { display: "block" }
-              : { display: "none" }
-          }
-        >
-          <h2>RAZER | HELLO KITTY</h2>
-          <div>NOW AVAILABLE ON RAZER CUSTOMS</div>
-          <ul>
-            <li>Shop Now</li>
-          </ul>
-        </div>
-      </div>
-      <div
-        className={`${styles.rightArrowStyle} scrollrr`}
-        onClick={goToPrevious}
-      >
-        <img src="/Icons/arrow-right.png" alt="" />
-      </div>
-      <div className={styles.dotsContainerStyle}>
-        {slides.map((slide, slideIndex) => (
-          <div
-            className={styles.dotStyle}
-            onClick={() => goToSlide(slideIndex)}
-            key={slideIndex}
+        <SwiperSlide>
+          {/* <div
+            className={styles.content}
             style={
-              currentIndex === slideIndex
-                ? { backgroundColor: "#44D62C" }
-                : { backgroundColor: "#CCCCCC" }
+              currentIndex === 0
+                ? { display: "block" }
+                : { display: "none" }
             }
-          ></div>
-        ))}
-      </div>
+          >
+            <h2>CONQUER YOUR CAMPUS</h2>
+            <div>NEW BACK-TO-SCHOOL SPECIALS</div>
+            <ul>
+              <li>Shop Now</li>
+            </ul>
+          </div> */}
+          <img
+            src={slides[0]}
+            alt=""
+            className={styles.images}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src={slides[1]}
+            alt=""
+            className={styles.images}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            src={slides[2]}
+            alt=""
+            className={styles.images}
+          />
+        </SwiperSlide>
+      </Swiper>
     </div>
   );
 }

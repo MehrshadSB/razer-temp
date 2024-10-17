@@ -1,7 +1,16 @@
+import { useQuery } from "@tanstack/react-query";
 import style from "./headerStyle.module.css";
 import { header } from "@/Constants/Const";
+import api from "@/services/api";
+import CartDisplay from "./CartDisplay";
 
 function Header() {
+  const { data: cart } = useQuery({
+    queryKey: ["cart"],
+    queryFn: () => api.get("/order/get-cart/"),
+  });
+
+
   return (
     <header className={style.header}>
       <nav className={style.navigator}>
@@ -26,11 +35,19 @@ function Header() {
               className={style.icons}
             />
           </li>
-          <li>
+          <li className={style.cartSection}>
             <img
               src="/Icons/shopping-cart.svg"
               className={`${style.cart} ${style.icons}`}
             />
+              <div className={style.cartDisplay} style={{display: "block"}}>
+                <img
+                className={style.arrowIcon}
+                  src="/Icons/boxArrow.png"
+                  alt="boxArrow"
+                />
+                <CartDisplay cart={cart} />
+              </div>
           </li>
         </ul>
       </nav>

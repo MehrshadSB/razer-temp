@@ -3,7 +3,6 @@ import "@/styles/fonts.css";
 import {
   QueryClient,
   QueryClientProvider,
-  Hydrate,
 } from "@tanstack/react-query";
 import { useState } from "react";
 

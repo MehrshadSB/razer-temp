@@ -1,15 +1,13 @@
 .container {
-  margin: auto;
   font-family: Roboto;
   margin-top: 100px;
 }
 
 .header {
-  width: 1200px;
   margin: auto;
   color: #FFFFFF;
   margin-bottom: 5px;
-
+  padding-left: 40px;
 }
 
 .header h2 {
@@ -23,5 +21,4 @@
   font-size: 1.2rem;
   margin: 0;
   display: flex;
-
 }

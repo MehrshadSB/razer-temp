@@ -1,0 +1,103 @@
+.mainContainer {
+  font-family: Roboto;
+  font-size: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mainContainer .orderSection li img {
+  width: 60px;
+  padding: 10px;
+}
+
+.mainContainer .orderSection {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+}
+
+.mainContainer .orderSection li {
+  border-top: 1px solid #555;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: auto;
+}
+
+.mainContainer .orderSection li:first-child {
+  border: none;
+}
+
+.mainContainer .orderSection li span {
+  max-height: 50px;
+  text-align: left;
+  margin: auto 0;
+}
+
+.mainContainer .orderSection li h5 span {
+  background-color: #222;
+  position: absolute;
+  left: 27%;
+  margin-top: -5px;
+  padding: 0 10px 0 10px;
+}
+
+.mainContainer .orderSection li h5 {
+  border-top: 1px solid #555;
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.actionBtn li {
+  min-height: 42px;
+  border-top: 1px solid #555;
+  font-size: 0.9rem;
+  font-family: Roboto;
+  display: flex;
+}
+
+.actionBtn li:hover {
+  color: #44D62C;
+}
+
+.actionBtn li:hover img{
+  fill: #44D62C;
+}
+
+
+.actionBtn li:nth-child(1) {
+  border-top: none;
+}
+
+.actionBtn li span {
+  margin-left: 10px;
+  line-height: 42px;
+}
+
+.actionBtn svg {
+  width: 18px;
+  fill: #fff;
+}
+
+.actionBtn {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  top: 280px;
+  left: 14.5px;
+  position: absolute;
+}
+
+.checkOutBtn {
+  width: 60%;
+  margin: auto;
+  height: 50px;
+  background-color: #44D62C;
+  border: 1px solid black;
+  font-family: Roboto;
+  font-size: 1rem;
+}

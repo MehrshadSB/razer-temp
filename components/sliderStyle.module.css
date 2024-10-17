@@ -1,7 +1,12 @@
 .imageContainer {
-  width: 1200px;
   height: 250px;
-  margin: 0 auto;
+  width: 90vw;
+  margin: auto;
   margin-top: 80px;
 }
 
+@media screen and (max-width: 1045px) {
+  .imageContainer {
+    width: 100%;
+  }
+}

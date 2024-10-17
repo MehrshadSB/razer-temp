@@ -1,6 +1,7 @@
 .container {
   display: flex;
   flex-direction: column;
+  width: 298px;
   min-width: 300px;
   height: 540px;
   margin-right: 20px;
@@ -13,7 +14,6 @@
 .discount {
   display: block;
   position: absolute;
-  width: 95px;
   height: 34px;
   background-color: #28AADC;
   margin-top: 30px;
@@ -62,6 +62,7 @@
   background-color: #44D62C;
   margin-top: 25px;
   border: 0.5px solid #111111;
+  z-index: 150;
 }
 
 .buy:hover {
@@ -136,4 +137,12 @@
   font-weight: bold;
   font-size: 1rem;
   line-height: 34px;
+}
+
+@media screen and (max-width: 1046px) {
+
+  .container {
+    width: 1400px;
+    overflow: auto;
+  }
 }
