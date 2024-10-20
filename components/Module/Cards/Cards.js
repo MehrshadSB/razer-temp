@@ -1,6 +1,6 @@
 import styles from "./CardsStyle.module.css";
 import { sp } from "@/services/replaceNumber";
-import usePostProduct from "@/customHooks/useCarts";
+import usePostProduct from "@/Hooks/useCarts";
 import { useRef } from "react";
 
 function Cards({ product }) {

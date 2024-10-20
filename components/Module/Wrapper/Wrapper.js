@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import Cards from "./Cards";
+import Cards from "../Cards/Cards";
 import styles from "./wrapperStyle.module.css";
 
 function Wrapper({ products }) {

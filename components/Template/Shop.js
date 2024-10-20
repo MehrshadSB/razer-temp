@@ -1,9 +1,9 @@
-import Categorys from "@/components/Categorys";
+import Categorys from "@/components/Module/Categorys/Categorys";
 import Layout from "@/components/layout/Layout";
-import MultiPanel from "@/components/MultiPanel";
-import Slider from "@/components/Slider";
-import Store from "@/components/Store";
-import TileSlider from "@/components/TileSlider";
+import MultiPanel from "@/components/Module/MultiPanel/MultiPanel";
+import Slider from "@/components/Module/Slider/Slider";
+import Store from "@/components/Module/Store/Store";
+import TileSlider from "@/components/Module/TileSlider/TileSlider";
 import style from "@/styles/shopStyle.module.css";
 
 function Shop({products}) {
@@ -36,13 +36,15 @@ function Shop({products}) {
               "Check out our latest releases to secure the most up-to-date upgrades for your setup"
             }
           />
-          <Store
-            products={bestSellers}
-            title={"BEST SELLERS"}
-            details={
-              "Join the hype train with the hottest products in our arsenal"
-            }
-          />
+          {
+            bestSellers >= 1 ? (<Store
+              products={bestSellers}
+              title={"BEST SELLERS"}
+              details={
+                "Join the hype train with the hottest products in our arsenal"
+              }
+            />) : null
+          }
           <Slider />
           <Store
             products={onlyAtRazer}

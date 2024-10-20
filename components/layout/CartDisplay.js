@@ -102,13 +102,11 @@ function CartDisplay({
                   <path
                     id="Path_22"
                     data-name="Path 22"
-                    class="cls-1"
                     d="M17.38,11H6a.41.41,0,0,1-.4-.32L3.49.83H0V0H3.82a.41.41,0,0,1,.41.32l2.15,9.85H17.06l2-7.7H6.25V1.65H19.58a.43.43,0,0,1,.4.52l-2.2,8.52A.42.42,0,0,1,17.38,11Z"
                   />
                   <circle
                     id="Ellipse_22"
                     data-name="Ellipse 22"
-                    class="cls-1"
                     cx="9"
                     cy="14"
                     r="2"
@@ -116,7 +114,6 @@ function CartDisplay({
                   <circle
                     id="Ellipse_23"
                     data-name="Ellipse 23"
-                    class="cls-1"
                     cx="15"
                     cy="14"
                     r="2"
@@ -155,7 +152,6 @@ function CartDisplay({
                 <path
                   id="Orders_icon"
                   data-name="Orders icon"
-                  class="cls-1"
                   d="M16.81,19H2.19A2.19,2.19,0,0,1,0,16.81V7.88H19v8.93A2.19,2.19,0,0,1,16.81,19ZM1,8.88v7.93A1.19,1.19,0,0,0,2.19,18H16.81A1.19,1.19,0,0,0,18,16.81V8.88ZM19,7.75H9.56V0H15a2.18,2.18,0,0,1,2.07,1.5L18.9,6.87c0,.11,0,.23.05.34Zm-8.43-1H17.8L16.16,1.81A1.18,1.18,0,0,0,15,1H10.56Zm-1.12,1H0l0-.54A2,2,0,0,1,.1,6.87L1.89,1.49A2.18,2.18,0,0,1,4,0H9.44Zm-8.25-1H8.44V1H4a1.18,1.18,0,0,0-1.12.81Z"
                 />
               </g>
@@ -182,7 +178,7 @@ function CartDisplay({
                 data-name="clickable area"
                 transform="translate(0 0.005)"
                 stroke="#707070"
-                stroke-width="1"
+                strokeWidth="1"
                 opacity="0"
               >
                 <rect
@@ -205,9 +201,9 @@ function CartDisplay({
                 transform="translate(-6 -11.5)"
                 fill="none"
                 stroke="#eee"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1"
               />
               <path
                 id="Path_32"
@@ -216,9 +212,9 @@ function CartDisplay({
                 transform="translate(-7.5 -4.5)"
                 fill="none"
                 stroke="#eee"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1"
+               strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="1"
               />
             </g>
           </svg>
@@ -254,7 +250,6 @@ function CartDisplay({
                 <path
                   id="Sign_in_icon"
                   data-name="Sign in icon"
-                  class="cls-1"
                   d="M7.5,0V2.43h10V14.57H7.5V17H20V0ZM10,4.86V7.29H0V9.71H10v2.43L15,8.5Z"
                 />
               </g>

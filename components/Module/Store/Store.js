@@ -1,5 +1,5 @@
 import styles from "./storeStyle.module.css";
-import Wrapper from "./Wrapper";
+import Wrapper from "../Wrapper/Wrapper";
 
 function Store({ products, title, details }) {
   return (

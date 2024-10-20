@@ -40,7 +40,7 @@ function Header() {
               src="/Icons/shopping-cart.svg"
               className={`${style.cart} ${style.icons}`}
             />
-              <div className={style.cartDisplay} style={{display: "block"}}>
+            <div className={style.cartDisplay}>
                 <img
                 className={style.arrowIcon}
                   src="/Icons/boxArrow.png"

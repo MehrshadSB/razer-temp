@@ -1,4 +1,4 @@
-import Shop from "@/PageModules/Shop";
+import Shop from "@/components/Template/Shop";
 import api from "@/services/api";
 
 function index({ products }) {

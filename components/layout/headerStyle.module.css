@@ -64,37 +64,23 @@
 
 .cartDisplay {
   /* Color & Background */
-  background-attachment: scroll;
   background-color: rgb(34, 34, 34);
-  background-image: none;
-  background-position: 0% 0%;
-  background-repeat: repeat;
   color: rgb(255, 255, 255);
 
-  /* Box */
   width: 288px;
-  height: 500px;
+  height: 80vh;
   border: 2px solid rgb(85, 85, 85);
   margin: 0px 2.8px;
-  padding: 0px;
-  max-width: 288px;
-  min-width: 288px;
 
   /* Positioning */
   position: absolute;
   top: 63px;
   right: -26px;
-  bottom: -603px;
   z-index: 200;
-
-  /* List */
-  list-style-image: none;
-  list-style-type: none;
-  list-style-position: outside;
 
   /* Effects */
   border-radius: 10px;
-  display: block;
+  display: none;
 }
 
 .cartDisplay .arrowIcon {
@@ -107,7 +93,7 @@
 }
 
 .cartSection:hover div {
-  display: flex;
+  display: block;
 }
 
 
