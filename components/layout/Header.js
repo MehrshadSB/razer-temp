@@ -1,15 +1,11 @@
-import { useQuery } from "@tanstack/react-query";
 import style from "./headerStyle.module.css";
 import { header } from "@/Constants/Const";
-import api from "@/services/api";
 import CartDisplay from "./CartDisplay";
+import { useCart } from "@/Context/CartProvider";
 
 function Header() {
-  const { data: cart } = useQuery({
-    queryKey: ["cart"],
-    queryFn: () => api.get("/order/get-cart/"),
-  });
-
+  const [cart] = useCart();
+  const cartItems = cart.selectedItems;
 
   return (
     <header className={style.header}>
@@ -19,10 +15,7 @@ function Header() {
             <img src="/Icons/menu-open.png" alt="" />
           </li>
           <li>
-            <img
-              src="/Icons/razer-logo.svg"
-              className={style.logo}
-            />
+            <img src="/Icons/razer-logo.svg" className={style.logo} />
           </li>
           {header.map((item) => (
             <li key={item.id} className={style.menu}>
@@ -30,24 +23,26 @@ function Header() {
             </li>
           ))}
           <li className={style.search}>
-            <img
-              src="/Icons/search.svg"
-              className={style.icons}
-            />
+            <img src="/Icons/search.svg" className={style.icons} />
           </li>
           <li className={style.cartSection}>
             <img
               src="/Icons/shopping-cart.svg"
               className={`${style.cart} ${style.icons}`}
             />
-            <div className={style.cartDisplay}>
+            {cartItems.length >= 1 ? (
+              <span className={style.itemsCounter}>{cartItems.length}</span>
+            ) : null}
+            {cartItems.length >= 0 ? (
+              <div className={style.cartDisplay}>
                 <img
-                className={style.arrowIcon}
+                  className={style.arrowIcon}
                   src="/Icons/boxArrow.png"
                   alt="boxArrow"
                 />
-                <CartDisplay cart={cart} />
+                <CartDisplay cart={cartItems} />
               </div>
+            ) : null}
           </li>
         </ul>
       </nav>

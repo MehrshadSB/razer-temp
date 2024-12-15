@@ -1,13 +1,14 @@
 import Shop from "@/components/Template/Shop";
 import api from "@/services/api";
+import Cookies from "js-cookie";
 
 function index({ products }) {
-  return <Shop products={products}/>   
+  return <Shop products={products} />;
 }
 
 export const getServerSideProps = async () => {
   const products = await api.get("/product/list/");
-  
+
   return {
     props: {
       products,

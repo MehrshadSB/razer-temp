@@ -4,14 +4,13 @@ function useRequest() {
   const createRequest = (config) => {
     axios({
       method: config?.method || "GET",
-      baseURL: config?.baseUrl || "", // set default base url here
+      baseURL: config?.baseUrl || "http://127.0.0.1:8000", // set default base url here
       url: config?.url,
       data: config?.data,
       params: config?.params,
+      credentials: "include",
       headers: {
         authorization: `Bearer ${config?.token}`,
-        "Content-Type":
-          config?.contentType || "application/json",
       },
     })
       .then((response) => {

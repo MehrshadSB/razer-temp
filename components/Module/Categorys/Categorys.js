@@ -1,13 +1,17 @@
-"use client";
-import api from "@/services/api";
+import { useEffect, useState } from "react";
 import style from "./categoryStyle.module.css";
-import { useQuery } from "@tanstack/react-query";
+import api from "@/services/api";
 
 function Categorys() {
-  const { data: categorys } = useQuery({
-    queryKey: ["categorys"],
-    queryFn: () => api.get("/product/productCategory/"),
-  });
+  const [categorys, setCategorys] = useState();
+
+  useEffect(() => {
+    const fetchCategorys = async () => {
+      const categorys = await api("/product/productCategory/");
+      setCategorys(categorys);
+    };
+    fetchCategorys();
+  }, []);
 
   return (
     <div className={style.container}>

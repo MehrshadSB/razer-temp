@@ -2,6 +2,7 @@ import styles from "./storeStyle.module.css";
 import Wrapper from "../Wrapper/Wrapper";
 
 function Store({ products, title, details }) {
+
   return (
     <section className={styles.container}>
       <div className={styles.header}>
@@ -10,7 +11,7 @@ function Store({ products, title, details }) {
           <p>{details}</p>
         </div>
       </div>
-      <Wrapper products={products}/>
+      <Wrapper products={products} />
     </section>
   );
 }

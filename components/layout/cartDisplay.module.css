@@ -1,9 +1,15 @@
 .mainContainer {
-  font-family: Roboto;
   font-size: 0.75rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  font-family: Roboto;
+  width: 288px;
+  height: 550px;
+  border: 2px solid rgb(85, 85, 85);
+  margin: 0px 2.8px;
+  background-color: rgb(34, 34, 34);
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
 }
 
 .mainContainer .orderSection li img {
@@ -33,14 +39,14 @@
 .mainContainer .orderSection li span {
   max-height: 50px;
   text-align: left;
-  margin: auto 0;
+  margin: auto;
 }
 
 .mainContainer .orderSection li h5 span {
   background-color: #222;
   position: absolute;
-  left: 27%;
-  margin-top: -5px;
+  top: -6.5px;
+  left:18.5%;
   padding: 0 10px 0 10px;
 }
 
@@ -50,13 +56,13 @@
   margin: auto;
   margin-top: 20px;
   text-align: center;
+  position: relative;
 }
 
 .actionBtn li {
   min-height: 42px;
   border-top: 1px solid #555;
   font-size: 0.9rem;
-  font-family: Roboto;
   display: flex;
 }
 
@@ -64,7 +70,7 @@
   color: #44D62C;
 }
 
-.actionBtn li:hover img{
+.actionBtn li:hover img {
   fill: #44D62C;
 }
 
@@ -83,21 +89,21 @@
   fill: #fff;
 }
 
-.actionBtn {
+.buttomSide {
+  margin: auto;
   width: 90%;
+}
+
+.actionBtn {
   flex-direction: column;
-  top: 57%;
-  left: 14.5px;
-  position: absolute;
 }
 
 .checkOutBtn {
   width: 60%;
   margin: auto;
-  height: 40px;
+  padding: 10px 20px 10px 20px;
   background-color: #44D62C;
   border: 1px solid black;
-  font-family: Roboto;
   font-size: 1rem;
-  
+  border-radius: 3px;
 }

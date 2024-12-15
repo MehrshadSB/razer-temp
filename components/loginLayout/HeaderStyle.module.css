@@ -1,0 +1,38 @@
+.header {
+  width: 100%;
+  border-bottom: 1px solid #44D62C;
+  position: relative;
+  
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  height: 60px;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+}
+
+.logo img {
+  width: 35px;
+}
+
+.logo p {
+  color: white;
+  font-family: Roboto;
+  margin-left: 20px;
+  line-height: 30px;
+}
+
+.icon img {
+  width: 35px;
+  margin-top: 12px;
+}

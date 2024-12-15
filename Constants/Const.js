@@ -86,6 +86,8 @@ const tile = [
   },
 ];
 
+
+
 export {
   shop,
   explore,
@@ -93,5 +95,5 @@ export {
   company,
   followUs,
   header,
-  tile
+  tile,
 };

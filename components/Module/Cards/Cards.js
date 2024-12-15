@@ -1,33 +1,16 @@
+"use client";
+import { ACTIONS, useCart } from "@/Context/CartProvider";
 import styles from "./CardsStyle.module.css";
 import { sp } from "@/services/replaceNumber";
-import usePostProduct from "@/Hooks/useCarts";
-import { useRef } from "react";
 
 function Cards({ product }) {
   const discount = product.discount_amount / 100;
-  const finalPrice =
-    product.price - product.price * discount;
-  const post = usePostProduct();
-  const buyButton = useRef(null);
-  const doneButton = useRef(null);
+  const finalPrice = product.price - product.price * discount;
 
-  const buyHandler = (id) => {
-    const data = { product: id, quantity: 1 };
-    const { postRes, loading, error } = post(
-      "/order/add-item/",
-      data
-    );
+  const [state, dispatch] = useCart();
 
-    switch (loading) {
-      case true:
-        console.log({ postRes, loading, error });
-      case false:
-        buyButton.current.style.display = "none";
-        doneButton.current.style.display = "block";
-        break;
-      default:
-        break;
-    }
+  const handleCart = (type) => {
+    dispatch({ type, payload: product });
   };
 
   return (
@@ -65,24 +48,17 @@ function Cards({ product }) {
             </div>
           ) : (
             <div>
-              <span className={styles.price}>
-                US ${sp(product.price)}
-              </span>
+              <span className={styles.price}>US ${sp(product.price)}</span>
             </div>
           )}
           <div>
             <button
               className={styles.buy}
-              ref={buyButton}
-              onClick={() => buyHandler(product.id)}
+              onClick={() => handleCart(ACTIONS.ADD_ITEM)}
             >
-              <p ref={buyButton}>BUY</p>
+              <p>BUY</p>
             </button>
-            <button
-              className={styles.buy}
-              ref={doneButton}
-              style={{ display: "none" }}
-            >
+            <button className={styles.buy} style={{ display: "none" }}>
               <p>✔</p>
             </button>
           </div>

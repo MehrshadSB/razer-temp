@@ -18,6 +18,9 @@
   color: white;
   padding: 0;
   margin: 0;
+}
+
+.header ul li {
   cursor: pointer;
 }
 
@@ -63,23 +66,11 @@
 }
 
 .cartDisplay {
-  /* Color & Background */
-  background-color: rgb(34, 34, 34);
-  color: rgb(255, 255, 255);
-
-  width: 288px;
-  height: 80vh;
-  border: 2px solid rgb(85, 85, 85);
-  margin: 0px 2.8px;
-
   /* Positioning */
   position: absolute;
   top: 63px;
   right: -26px;
   z-index: 200;
-
-  /* Effects */
-  border-radius: 10px;
   display: none;
 }
 
@@ -94,6 +85,22 @@
 
 .cartSection:hover div {
   display: block;
+}
+
+.itemsCounter {
+  position: absolute;
+  color: #000;
+  font-weight: 700;
+  font-size: 12px;
+  font-family: Roboto;
+  text-align: center;
+  line-height: 18px;
+  width: 18px;
+  height: 18px;
+  background-color: #44D62C;
+  top: 12px;
+  right: -7px;
+  border-radius: 8px;
 }
 
 
