@@ -42,14 +42,14 @@ const company = [
 ];
 
 const followUs = [
-  { id: 1, image: "/Icons/instagram.svg" },
-  { id: 2, image: "/Icons/facebook.svg" },
-  { id: 3, image: "/Icons/threads.svg" },
-  { id: 4, image: "/Icons/twitter.svg" },
-  { id: 5, image: "/Icons/youtube.svg" },
-  { id: 6, image: "/Icons/tiktok.svg" },
-  { id: 7, image: "/Icons/twitch.svg" },
-  { id: 8, image: "/Icons/discord.svg" },
+  { id: "instagram", image: "/Icons/instagram.svg" },
+  { id: "facebook", image: "/Icons/facebook.svg" },
+  { id: "threads", image: "/Icons/threads.svg" },
+  { id: "twitter", image: "/Icons/twitter.svg" },
+  { id: "youtube", image: "/Icons/youtube.svg" },
+  { id: "tiktok", image: "/Icons/tiktok.svg" },
+  { id: "twitch", image: "/Icons/twitch.svg" },
+  { id: "discord", image: "/Icons/discord.svg" },
 ];
 
 const header = [
@@ -86,14 +86,4 @@ const tile = [
   },
 ];
 
-
-
-export {
-  shop,
-  explore,
-  support,
-  company,
-  followUs,
-  header,
-  tile,
-};
+export { shop, explore, support, company, followUs, header, tile };

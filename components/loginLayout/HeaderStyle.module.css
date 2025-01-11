@@ -1,8 +1,9 @@
 .header {
   width: 100%;
   border-bottom: 1px solid #44D62C;
-  position: relative;
-  
+  background-color: black;
+  position: fixed;
+  z-index: 100;
 }
 
 .container {
@@ -29,7 +30,7 @@
   color: white;
   font-family: Roboto;
   margin-left: 20px;
-  line-height: 30px;
+  line-height: 60px;
 }
 
 .icon img {

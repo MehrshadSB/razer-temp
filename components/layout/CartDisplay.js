@@ -1,19 +1,22 @@
 import style from "@/components/layout/cartDisplay.module.css";
+import { useCart } from "@/Context/CartProvider";
+import { signOutHandler } from "@/helper/helper";
 import Link from "next/link";
 
-function CartDisplay({ cart }) {
-  const uiCartItems = cart.slice(0, 3);
+function CartDisplay({ cookies }) {
+  const [state, dispatch] = useCart();
+  const uiCartItems = state.selectedItems.slice(0, 3);
 
   return (
     <div
       style={
-        cart.length === 0
+        uiCartItems.length === 0
           ? { height: "280px" }
-          : cart.length === 1
+          : uiCartItems.length === 1
           ? { height: "400px" }
-          : cart.length === 2
+          : uiCartItems.length === 2
           ? { height: "450px" }
-          : cart.length >= 3
+          : uiCartItems.length >= 3
           ? { height: "500px" }
           : null
       }
@@ -32,7 +35,7 @@ function CartDisplay({ cart }) {
             <li>Loading...</li>
           )}
           <li>
-            {cart.length > 3 ? (
+            {uiCartItems.length > 3 ? (
               <h5>
                 <span>
                   {cart.length -
@@ -40,13 +43,15 @@ function CartDisplay({ cart }) {
                     " more items in your cart"}
                 </span>
               </h5>
-            ) : cart.length === 0 ? (
-              <span style={{marginTop: "-20px", fontSize: "16px"}}>Your Cart is Empty</span>
+            ) : uiCartItems.length === 0 ? (
+              <span style={{ marginTop: "-20px", fontSize: "16px" }}>
+                Your Cart is Empty
+              </span>
             ) : null}
           </li>
           <button
             style={
-              cart.length === 0
+              uiCartItems.length === 0
                 ? { display: "none" }
                 : uiCartItems.length === 1
                 ? { marginTop: "60px" }
@@ -65,7 +70,7 @@ function CartDisplay({ cart }) {
       <div
         style={
           uiCartItems.length === 0
-            ? { marginTop: "-35px" }
+            ? { marginTop: "-38px" }
             : uiCartItems.length === 1
             ? { marginTop: "80px" }
             : uiCartItems.length === 2
@@ -112,7 +117,7 @@ function CartDisplay({ cart }) {
                 </g>
               </g>
             </svg>
-            <span>Cart ({cart.length})</span>
+            <span>Cart ({uiCartItems.length})</span>
           </li>
           <li>
             <svg
@@ -193,23 +198,25 @@ function CartDisplay({ cart }) {
             </svg>
             <span>RazerStore Rewards</span>
           </li>
-          <li>
-            <Link href="/login"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 17">
-              <defs>
-                <style></style>
-              </defs>
-              <g id="Layer_2" data-name="Layer 2">
-                <g id="Layer_1-2" data-name="Layer 1">
-                  <path
-                    id="Sign_in_icon"
-                    data-name="Sign in icon"
-                    d="M7.5,0V2.43h10V14.57H7.5V17H20V0ZM10,4.86V7.29H0V9.71H10v2.43L15,8.5Z"
-                  />
+          <li onClick={signOutHandler}>
+            <Link
+              href="/login"
+              style={{ textDecoration: "none", color: "#fff" }}
+              className={style.link}
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 17">
+                <g id="Layer_2" data-name="Layer 2">
+                  <g id="Layer_1-2" data-name="Layer 1">
+                    <path
+                      id="Sign_in_icon"
+                      data-name="Sign in icon"
+                      d="M7.5,0V2.43h10V14.57H7.5V17H20V0ZM10,4.86V7.29H0V9.71H10v2.43L15,8.5Z"
+                    />
+                  </g>
                 </g>
-              </g>
-            </svg>
-            <span>Log in</span></Link>
-            
+              </svg>
+              <span>{cookies.accessToken ? "log out" : "log in"}</span>
+            </Link>
           </li>
         </ul>
       </div>

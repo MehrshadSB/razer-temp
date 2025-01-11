@@ -8,11 +8,9 @@ function usePostProduct() {
   const createRequest = useRequest();
 
   const post = (url, data) => {
-    setLoading(true);
-
     createRequest({
       method: "POST",
-      baseUrl: "http://127.0.0.1:8000/", //Your base url
+      baseUrl: "http://localhost:3000", //Your base url
       url,
       data,
       onSuccess: (response) => {

@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  width: 100%;
 }
 
 .scroller {
@@ -24,7 +25,8 @@
 .cover {
   position: relative;
   max-height: 100%;
-  width: 90%;
+  width: 95%;
+
 }
 
 .cover::before {
@@ -34,8 +36,7 @@
   top: 0;
   z-index: 99;
   height: 540px;
-  width: 100px;
-  margin-left: -1px;
+  width: 40px;
   background-image: linear-gradient(90deg, rgb(0, 0, 0), transparent);
 }
 
@@ -48,7 +49,6 @@
   height: 540px;
   width: 100px;
   margin-right: -1px;
-
   background-image: linear-gradient(-90deg, rgb(0, 0, 0), transparent);
 }
 
@@ -63,4 +63,44 @@
   overflow: auto;
   position: relative;
   scroll-behavior: smooth;
+  /* padding: 0 2%; */
 }
+
+/* For mobile devices (up to 767px wide) */
+@media only screen and (max-width: 767px) {
+  /* Your mobile-specific styles go here */
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+
+  .arrowsL {
+    display: none;
+  }
+
+  .arrowsR {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .arrowsL {
+    display: none;
+  }
+
+  .arrowsR {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1493px) and (max-width: 1559px) {}
+
+/* For large desktops (1560px and up) */
+@media only screen and (min-width: 1560px) {}
+
+@media only screen and (max-width: 1441px) {}
+
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 1000px) {}

@@ -2,13 +2,8 @@ import { useState } from "react";
 import Style from "./footerStyle.module.css";
 import Mobile from "./footerMobileStyle.module.css";
 
-import {
-  shop,
-  explore,
-  support,
-  company,
-  followUs,
-} from "@/Constants/Const";
+import { shop, explore, support, company, followUs } from "@/Constants/Const";
+import Image from "next/image";
 
 function Footer() {
   // const shop = useRef();
@@ -76,10 +71,7 @@ function Footer() {
                 <li>Follow Us</li>
                 {followUs.map((icon) => (
                   <li key={icon.id} className={Style.icons}>
-                    <img
-                      src={icon.image}
-                      className={Style.icon}
-                    />
+                    <Image src={icon.image} className={Style.icon} fill />
                   </li>
                 ))}
               </ul>
@@ -94,8 +86,7 @@ function Footer() {
           <div className={Style.firstTwo}>
             <div className={Style.copyrightDiv}>
               <span className={Style.copyright}>
-                Copyright © 2024 Razer Inc. All rights
-                reserved.
+                Copyright © 2024 Razer Inc. All rights reserved.
               </span>
             </div>
             <div className={Style.legalTerm}>
@@ -122,20 +113,12 @@ function Footer() {
       <div className={Mobile.MobileFooter}>
         <div className={Mobile.main}>
           <div className={Mobile.Col}>
-            <div
-              className={Mobile.label}
-              onClick={(e) => dropDownHandler(e)}
-            >
+            <div className={Mobile.label} onClick={(e) => dropDownHandler(e)}>
               <label>
                 <span className={Mobile.heading}>Shop</span>
-                <span
-                  className={Mobile.footer_toggle_icon}
-                ></span>
+                <span className={Mobile.footer_toggle_icon}></span>
               </label>
-              <div
-                className={Mobile.dropDownDiv}
-                name="Shop"
-              >
+              <div className={Mobile.dropDownDiv} name="Shop">
                 <ul>
                   <li>RazerStore</li>
                   <li>RazerCafe</li>
@@ -151,22 +134,12 @@ function Footer() {
             </div>
           </div>
           <div className={Mobile.Col}>
-            <div
-              className={Mobile.label}
-              onClick={(e) => dropDownHandler(e)}
-            >
+            <div className={Mobile.label} onClick={(e) => dropDownHandler(e)}>
               <label>
-                <span className={Mobile.heading}>
-                  Explore
-                </span>
-                <span
-                  className={Mobile.footer_toggle_icon}
-                ></span>
+                <span className={Mobile.heading}>Explore</span>
+                <span className={Mobile.footer_toggle_icon}></span>
               </label>
-              <div
-                className={Mobile.dropDownDiv}
-                name="Explore"
-              >
+              <div className={Mobile.dropDownDiv} name="Explore">
                 <ul>
                   <li>Technology</li>
                   <li>Chroma RGB</li>
@@ -178,22 +151,12 @@ function Footer() {
             </div>
           </div>
           <div className={Mobile.Col}>
-            <div
-              className={Mobile.label}
-              onClick={(e) => dropDownHandler(e)}
-            >
+            <div className={Mobile.label} onClick={(e) => dropDownHandler(e)}>
               <label>
-                <span className={Mobile.heading}>
-                  Support
-                </span>
-                <span
-                  className={Mobile.footer_toggle_icon}
-                ></span>
+                <span className={Mobile.heading}>Support</span>
+                <span className={Mobile.footer_toggle_icon}></span>
               </label>
-              <div
-                className={Mobile.dropDownDiv}
-                name="Support"
-              >
+              <div className={Mobile.dropDownDiv} name="Support">
                 <ul>
                   <li>Get Help</li>
                   <li>Chroma RGB</li>
@@ -208,22 +171,12 @@ function Footer() {
             </div>
           </div>
           <div className={Mobile.Col}>
-            <div
-              className={Mobile.label}
-              onClick={(e) => dropDownHandler(e)}
-            >
+            <div className={Mobile.label} onClick={(e) => dropDownHandler(e)}>
               <label>
-                <span className={Mobile.heading}>
-                  Company
-                </span>
-                <span
-                  className={Mobile.footer_toggle_icon}
-                ></span>
+                <span className={Mobile.heading}>Company</span>
+                <span className={Mobile.footer_toggle_icon}></span>
               </label>
-              <div
-                className={Mobile.dropDownDiv}
-                name="Company"
-              >
+              <div className={Mobile.dropDownDiv} name="Company">
                 <ul>
                   <li>About Us</li>
                   <li>Careers</li>
@@ -236,9 +189,7 @@ function Footer() {
           </div>
         </div>
         <div className={Mobile.copyright}>
-          <span>
-            Copyright © 2024 Razer Inc. All rights reserved.
-          </span>
+          <span>Copyright © 2024 Razer Inc. All rights reserved.</span>
           <div className={Mobile.legalTerm}>
             <ul>
               <li>Site Map</li>
@@ -256,10 +207,7 @@ function Footer() {
             <li>United State</li>
             <li>|</li>
             <li>
-              Change Location{" "}
-              <span style={{ marginLeft: "5px" }}>
-                {">"}
-              </span>{" "}
+              Change Location <span style={{ marginLeft: "5px" }}>{">"}</span>{" "}
             </li>
           </ul>
         </div>
@@ -270,10 +218,7 @@ function Footer() {
           <ul className={Mobile.list}>
             {followUs.map((icon) => (
               <li key={icon.id} className={Mobile.icons}>
-                <img
-                  src={icon.image}
-                  className={Mobile.icon}
-                />
+                <img src={icon.image} alt={icon.id} className={Mobile.icon} width={28} height={28}/>
               </li>
             ))}
           </ul>

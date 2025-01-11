@@ -2,14 +2,15 @@
 import { ACTIONS, useCart } from "@/Context/CartProvider";
 import styles from "./CardsStyle.module.css";
 import { sp } from "@/services/replaceNumber";
+import Image from "next/image";
 
 function Cards({ product }) {
   const discount = product.discount_amount / 100;
   const finalPrice = product.price - product.price * discount;
 
   const [state, dispatch] = useCart();
-
-  const handleCart = (type) => {
+  
+  const handleCart = async (type) => {
     dispatch({ type, payload: product });
   };
 
@@ -30,7 +31,7 @@ function Cards({ product }) {
       ) : null}
 
       <div className={styles.img}>
-        <img src={product.image} />
+        <Image src={product.image} width={500} height={500} quality={100} alt={product.name} />
       </div>
       <div className={styles.details}>
         <section>

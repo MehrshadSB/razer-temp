@@ -46,7 +46,7 @@
   background-color: #222;
   position: absolute;
   top: -6.5px;
-  left:18.5%;
+  left: 18.5%;
   padding: 0 10px 0 10px;
 }
 
@@ -72,6 +72,10 @@
 
 .actionBtn li:hover img {
   fill: #44D62C;
+}
+
+.link span:hover {
+  color: #44D62C;
 }
 
 

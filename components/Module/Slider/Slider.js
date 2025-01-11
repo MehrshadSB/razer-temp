@@ -6,13 +6,10 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import Image from "next/image";
 
 function Slider() {
-  const images = [
-    "/slider/1.webp",
-    "/slider/2.webp",
-    "/slider/3.webp",
-  ];
+  const images = ["/slider/1.webp", "/slider/2.webp", "/slider/3.webp"];
 
   return (
     <div className={styles.imageContainer}>
@@ -26,25 +23,13 @@ function Slider() {
         className={styles.swiper}
       >
         <SwiperSlide className={styles.swiperSlide}>
-          <img
-            src={images[0]}
-            alt=""
-            className={styles.images}
-          />
+          <Image src={images[0]} alt="" className={styles.images} fill />
         </SwiperSlide>
         <SwiperSlide className={styles.swiperSlide}>
-          <img
-            src={images[1]}
-            alt=""
-            className={styles.images}
-          />
+          <Image src={images[1]} alt="" className={styles.images} fill />
         </SwiperSlide>
         <SwiperSlide className={styles.swiperSlide}>
-          <img
-            src={images[2]}
-            alt=""
-            className={styles.images}
-          />
+          <Image src={images[2]} alt="" className={styles.images} fill />
         </SwiperSlide>
       </Swiper>
     </div>

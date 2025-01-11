@@ -41,7 +41,7 @@
 
 .details {
   background-color: #222222;
-  height: 50%;
+  height: 40%;
   color: white;
   font-family: Roboto;
   padding: 0px 15px 15px 15px;
@@ -53,6 +53,11 @@
 .details section p {
   color: #777777;
   font-weight: 300;
+  padding: 10px 0;
+}
+
+.details section h3 {
+  padding: 10px 0;
 }
 
 .buy {

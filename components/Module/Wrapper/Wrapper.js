@@ -46,7 +46,7 @@ function Wrapper({ products }) {
       onMouseEnter={() => revealButtons()}
       onMouseLeave={() => hideButtons()}
     >
-      <div>
+      <div className={styles.arrowsL}>
         <button
           className={`${styles.scroller} scrolll`}
           onClick={() => scrolll()}
@@ -55,10 +55,8 @@ function Wrapper({ products }) {
         </button>
       </div>
       <div className={styles.cover}>
-        <div
-          className={`${styles.scrollImage}`}
-          ref={parentDiv}
-        >
+        <div className={`${styles.scrollImage}`} ref={parentDiv}>
+          {/* <div className={styles.gapDiv}></div> */}
           {products.map((product) => (
             <Cards key={product.id} product={product} />
           ))}
@@ -69,10 +67,7 @@ function Wrapper({ products }) {
           className={`${styles.scroller} scrollr`}
           onClick={() => scrollr()}
         >
-          <img
-            src="/Icons/arrow-right.png"
-            className={styles.rightImage}
-          />
+          <img src="/Icons/arrow-right.png" className={styles.rightImage} />
         </button>
       </div>
     </div>

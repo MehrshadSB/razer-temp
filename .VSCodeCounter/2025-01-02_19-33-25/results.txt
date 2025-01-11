@@ -1,0 +1,168 @@
+Date : 2025-01-02 19:33:25
+Directory : j:\razer-shop-page
+Total : 101 files,  8934 codes, 12 comments, 514 blanks, all 9460 lines
+
+Languages
++--------------------+------------+------------+------------+------------+------------+
+| language           | files      | code       | comment    | blank      | total      |
++--------------------+------------+------------+------------+------------+------------+
+| JSON               |          4 |      5,154 |          0 |          3 |      5,157 |
+| JavaScript         |         39 |      1,867 |          7 |        182 |      2,056 |
+| CSS                |         20 |      1,437 |          4 |        272 |      1,713 |
+| XML                |         30 |        194 |          1 |         14 |        209 |
+| Markdown           |          5 |        189 |          0 |         42 |        231 |
+| CSV                |          2 |         86 |          0 |          0 |         86 |
+| JSON with Comments |          1 |          7 |          0 |          1 |          8 |
++--------------------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                       | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                          |        101 |      8,934 |         12 |        514 |      9,460 |
+| . (Files)                                                                  |          6 |      5,199 |          1 |         22 |      5,222 |
+| .VSCodeCounter                                                             |          7 |        251 |          0 |         26 |        277 |
+| .VSCodeCounter\2024-11-29_20-17-34                                         |          7 |        251 |          0 |         26 |        277 |
+| Constants                                                                  |          1 |         90 |          0 |         10 |        100 |
+| Context                                                                    |          2 |        103 |          0 |         15 |        118 |
+| Hooks                                                                      |          3 |        104 |          1 |         19 |        124 |
+| components                                                                 |         35 |      2,583 |          6 |        325 |      2,914 |
+| components\Module                                                          |         18 |      1,174 |          0 |        154 |      1,328 |
+| components\Module\Cards                                                    |          2 |        198 |          0 |         28 |        226 |
+| components\Module\Categorys                                                |          2 |         65 |          0 |         12 |         77 |
+| components\Module\Login                                                    |          2 |        247 |          0 |         25 |        272 |
+| components\Module\MultiPanel                                               |          2 |         94 |          0 |          8 |        102 |
+| components\Module\Signin                                                   |          2 |        144 |          0 |         15 |        159 |
+| components\Module\Slider                                                   |          2 |        103 |          0 |         18 |        121 |
+| components\Module\Store                                                    |          2 |         37 |          0 |          9 |         46 |
+| components\Module\TileSlider                                               |          2 |        156 |          0 |         22 |        178 |
+| components\Module\Wrapper                                                  |          2 |        130 |          0 |         17 |        147 |
+| components\Template                                                        |          4 |         91 |          0 |         15 |        106 |
+| components\layout                                                          |          8 |      1,089 |          6 |        130 |      1,225 |
+| components\loginLayout                                                     |          5 |        229 |          0 |         26 |        255 |
+| helper                                                                     |          1 |         15 |          0 |          4 |         19 |
+| lib                                                                        |          1 |         17 |          0 |          3 |         20 |
+| pages                                                                      |          9 |        123 |          0 |         30 |        153 |
+| pages (Files)                                                              |          3 |         26 |          0 |          5 |         31 |
+| pages\api                                                                  |          2 |         47 |          0 |          8 |         55 |
+| pages\dashboard                                                            |          1 |          5 |          0 |          3 |          8 |
+| pages\login                                                                |          1 |         18 |          0 |          6 |         24 |
+| pages\shop                                                                 |          1 |         21 |          0 |          5 |         26 |
+| pages\signin                                                               |          1 |          6 |          0 |          3 |          9 |
+| public                                                                     |         30 |        194 |          1 |         14 |        209 |
+| public (Files)                                                             |          2 |          2 |          0 |          0 |          2 |
+| public\Icons                                                               |         23 |        162 |          1 |          9 |        172 |
+| public\Icons (Files)                                                       |         18 |        139 |          1 |          7 |        147 |
+| public\Icons\cart                                                          |          5 |         23 |          0 |          2 |         25 |
+| public\logos                                                               |          5 |         30 |          0 |          5 |         35 |
+| services                                                                   |          2 |         26 |          0 |          8 |         34 |
+| styles                                                                     |          4 |        229 |          3 |         38 |        270 |
++----------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| filename                                                                   | language           | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| j:\razer-shop-page\.VSCodeCounter\2024-11-29_20-17-34\details.md           | Markdown           |         91 |          0 |          6 |         97 |
+| j:\razer-shop-page\.VSCodeCounter\2024-11-29_20-17-34\diff-details.md      | Markdown           |          9 |          0 |          6 |         15 |
+| j:\razer-shop-page\.VSCodeCounter\2024-11-29_20-17-34\diff.csv             | CSV                |          2 |          0 |          0 |          2 |
+| j:\razer-shop-page\.VSCodeCounter\2024-11-29_20-17-34\diff.md              | Markdown           |         12 |          0 |          7 |         19 |
+| j:\razer-shop-page\.VSCodeCounter\2024-11-29_20-17-34\results.csv          | CSV                |         84 |          0 |          0 |         84 |
+| j:\razer-shop-page\.VSCodeCounter\2024-11-29_20-17-34\results.json         | JSON               |          1 |          0 |          0 |          1 |
+| j:\razer-shop-page\.VSCodeCounter\2024-11-29_20-17-34\results.md           | Markdown           |         52 |          0 |          7 |         59 |
+| j:\razer-shop-page\.prettier.json                                          | JSON               |         21 |          0 |          1 |         22 |
+| j:\razer-shop-page\Constants\Const.js                                      | JavaScript         |         90 |          0 |         10 |        100 |
+| j:\razer-shop-page\Context\CartProvider.js                                 | JavaScript         |         98 |          0 |         12 |        110 |
+| j:\razer-shop-page\Context\GlobalProvider.js                               | JavaScript         |          5 |          0 |          3 |          8 |
+| j:\razer-shop-page\Hooks\useCarts.js                                       | JavaScript         |         53 |          0 |         11 |         64 |
+| j:\razer-shop-page\Hooks\useRequest.js                                     | JavaScript         |         35 |          1 |          4 |         40 |
+| j:\razer-shop-page\Hooks\useWindowsSize.js                                 | JavaScript         |         16 |          0 |          4 |         20 |
+| j:\razer-shop-page\README.md                                               | Markdown           |         25 |          0 |         16 |         41 |
+| j:\razer-shop-page\components\Module\Cards\Cards.js                        | JavaScript         |         66 |          0 |          7 |         73 |
+| j:\razer-shop-page\components\Module\Cards\CardsStyle.module.css           | CSS                |        132 |          0 |         21 |        153 |
+| j:\razer-shop-page\components\Module\Categorys\Categorys.js                | JavaScript         |         26 |          0 |          5 |         31 |
+| j:\razer-shop-page\components\Module\Categorys\categoryStyle.module.css    | CSS                |         39 |          0 |          7 |         46 |
+| j:\razer-shop-page\components\Module\Login\Logingin.js                     | JavaScript         |        142 |          0 |          8 |        150 |
+| j:\razer-shop-page\components\Module\Login\login.module.css                | CSS                |        105 |          0 |         17 |        122 |
+| j:\razer-shop-page\components\Module\MultiPanel\MultiPanel.js              | JavaScript         |         60 |          0 |          3 |         63 |
+| j:\razer-shop-page\components\Module\MultiPanel\multiPanelStyle.module.css | CSS                |         34 |          0 |          5 |         39 |
+| j:\razer-shop-page\components\Module\Signin\Signin.js                      | JavaScript         |         94 |          0 |          5 |         99 |
+| j:\razer-shop-page\components\Module\Signin\signin.module.css              | CSS                |         50 |          0 |         10 |         60 |
+| j:\razer-shop-page\components\Module\Slider\Slider.js                      | JavaScript         |         50 |          0 |          5 |         55 |
+| j:\razer-shop-page\components\Module\Slider\sliderStyle.module.css         | CSS                |         53 |          0 |         13 |         66 |
+| j:\razer-shop-page\components\Module\Store\Store.js                        | JavaScript         |         16 |          0 |          4 |         20 |
+| j:\razer-shop-page\components\Module\Store\storeStyle.module.css           | CSS                |         21 |          0 |          5 |         26 |
+| j:\razer-shop-page\components\Module\TileSlider\TileSlider.js              | JavaScript         |         64 |          0 |          6 |         70 |
+| j:\razer-shop-page\components\Module\TileSlider\TileSliderStyle.module.css | CSS                |         92 |          0 |         16 |        108 |
+| j:\razer-shop-page\components\Module\Wrapper\Wrapper.js                    | JavaScript         |         74 |          0 |          9 |         83 |
+| j:\razer-shop-page\components\Module\Wrapper\wrapperStyle.module.css       | CSS                |         56 |          0 |          8 |         64 |
+| j:\razer-shop-page\components\Template\Dashboard.js                        | JavaScript         |          7 |          0 |          2 |          9 |
+| j:\razer-shop-page\components\Template\Login.js                            | JavaScript         |         14 |          0 |          4 |         18 |
+| j:\razer-shop-page\components\Template\Shop.js                             | JavaScript         |         61 |          0 |          7 |         68 |
+| j:\razer-shop-page\components\Template\login.module.css                    | CSS                |          9 |          0 |          2 |         11 |
+| j:\razer-shop-page\components\layout\CartDisplay.js                        | JavaScript         |        224 |          0 |          4 |        228 |
+| j:\razer-shop-page\components\layout\Footer.js                             | JavaScript         |        276 |          5 |          6 |        287 |
+| j:\razer-shop-page\components\layout\Header.js                             | JavaScript         |         50 |          0 |          4 |         54 |
+| j:\razer-shop-page\components\layout\Layout.js                             | JavaScript         |         14 |          0 |          3 |         17 |
+| j:\razer-shop-page\components\layout\cartDisplay.module.css                | CSS                |         95 |          0 |         18 |        113 |
+| j:\razer-shop-page\components\layout\footerMobileStyle.module.css          | CSS                |        130 |          0 |         26 |        156 |
+| j:\razer-shop-page\components\layout\footerStyle.module.css                | CSS                |        187 |          0 |         48 |        235 |
+| j:\razer-shop-page\components\layout\headerStyle.module.css                | CSS                |        113 |          1 |         21 |        135 |
+| j:\razer-shop-page\components\loginLayout\Footer.js                        | JavaScript         |        105 |          0 |          3 |        108 |
+| j:\razer-shop-page\components\loginLayout\FooterStyle.module.css           | CSS                |         58 |          0 |         12 |         70 |
+| j:\razer-shop-page\components\loginLayout\Header.js                        | JavaScript         |         20 |          0 |          3 |         23 |
+| j:\razer-shop-page\components\loginLayout\HeaderStyle.module.css           | CSS                |         34 |          0 |          5 |         39 |
+| j:\razer-shop-page\components\loginLayout\layout.js                        | JavaScript         |         12 |          0 |          3 |         15 |
+| j:\razer-shop-page\helper\helper.js                                        | JavaScript         |         15 |          0 |          4 |         19 |
+| j:\razer-shop-page\jsconfig.json                                           | JSON with Comments |          7 |          0 |          1 |          8 |
+| j:\razer-shop-page\lib\reducer.js                                          | JavaScript         |         17 |          0 |          3 |         20 |
+| j:\razer-shop-page\next.config.mjs                                         | JavaScript         |         14 |          1 |          2 |         17 |
+| j:\razer-shop-page\package-lock.json                                       | JSON               |      5,100 |          0 |          1 |      5,101 |
+| j:\razer-shop-page\package.json                                            | JSON               |         32 |          0 |          1 |         33 |
+| j:\razer-shop-page\pages\_app.js                                           | JavaScript         |         10 |          0 |          2 |         12 |
+| j:\razer-shop-page\pages\_document.js                                      | JavaScript         |         13 |          0 |          2 |         15 |
+| j:\razer-shop-page\pages\api\auth.js                                       | JavaScript         |         36 |          0 |          5 |         41 |
+| j:\razer-shop-page\pages\api\logout.js                                     | JavaScript         |         11 |          0 |          3 |         14 |
+| j:\razer-shop-page\pages\dashboard\index.js                                | JavaScript         |          5 |          0 |          3 |          8 |
+| j:\razer-shop-page\pages\index.js                                          | JavaScript         |          3 |          0 |          1 |          4 |
+| j:\razer-shop-page\pages\login\index.js                                    | JavaScript         |         18 |          0 |          6 |         24 |
+| j:\razer-shop-page\pages\shop\index.js                                     | JavaScript         |         21 |          0 |          5 |         26 |
+| j:\razer-shop-page\pages\signin\index.js                                   | JavaScript         |          6 |          0 |          3 |          9 |
+| j:\razer-shop-page\public\Icons\Globe_icon.svg                             | XML                |          8 |          0 |          0 |          8 |
+| j:\razer-shop-page\public\Icons\buynow-paylater-icon.svg                   | XML                |          1 |          0 |          0 |          1 |
+| j:\razer-shop-page\public\Icons\cart\account-icon.svg                      | XML                |         10 |          0 |          1 |         11 |
+| j:\razer-shop-page\public\Icons\cart\cart_icon.svg                         | XML                |          1 |          0 |          0 |          1 |
+| j:\razer-shop-page\public\Icons\cart\orders_icon.svg                       | XML                |          1 |          0 |          0 |          1 |
+| j:\razer-shop-page\public\Icons\cart\razerstore_icon.svg                   | XML                |         10 |          0 |          1 |         11 |
+| j:\razer-shop-page\public\Icons\cart\signin_icon.svg                       | XML                |          1 |          0 |          0 |          1 |
+| j:\razer-shop-page\public\Icons\discord.svg                                | XML                |          1 |          0 |          0 |          1 |
+| j:\razer-shop-page\public\Icons\exclusives-icon.svg                        | XML                |         19 |          0 |          2 |         21 |
+| j:\razer-shop-page\public\Icons\facebook.svg                               | XML                |          1 |          0 |          0 |          1 |
+| j:\razer-shop-page\public\Icons\first-dibs-icon.svg                        | XML                |         16 |          0 |          1 |         17 |
+| j:\razer-shop-page\public\Icons\insider.svg                                | XML                |          4 |          0 |          1 |          5 |
+| j:\razer-shop-page\public\Icons\instagram.svg                              | XML                |         18 |          0 |          1 |         19 |
+| j:\razer-shop-page\public\Icons\largest-array-icon.svg                     | XML                |          1 |          0 |          0 |          1 |
+| j:\razer-shop-page\public\Icons\login.svg                                  | XML                |         20 |          1 |          0 |         21 |
+| j:\razer-shop-page\public\Icons\razer-logo.svg                             | XML                |          1 |          0 |          0 |          1 |
+| j:\razer-shop-page\public\Icons\search.svg                                 | XML                |          1 |          0 |          0 |          1 |
+| j:\razer-shop-page\public\Icons\shopping-cart.svg                          | XML                |          1 |          0 |          0 |          1 |
+| j:\razer-shop-page\public\Icons\threads.svg                                | XML                |         13 |          0 |          0 |         13 |
+| j:\razer-shop-page\public\Icons\tiktok.svg                                 | XML                |         14 |          0 |          1 |         15 |
+| j:\razer-shop-page\public\Icons\twitch.svg                                 | XML                |         18 |          0 |          1 |         19 |
+| j:\razer-shop-page\public\Icons\twitter.svg                                | XML                |          1 |          0 |          0 |          1 |
+| j:\razer-shop-page\public\Icons\youtube.svg                                | XML                |          1 |          0 |          0 |          1 |
+| j:\razer-shop-page\public\logos\apple.svg                                  | XML                |          3 |          0 |          1 |          4 |
+| j:\razer-shop-page\public\logos\facebook.svg                               | XML                |         11 |          0 |          1 |         12 |
+| j:\razer-shop-page\public\logos\google.svg                                 | XML                |          6 |          0 |          1 |          7 |
+| j:\razer-shop-page\public\logos\twitch.svg                                 | XML                |          6 |          0 |          1 |          7 |
+| j:\razer-shop-page\public\logos\wechat.svg                                 | XML                |          4 |          0 |          1 |          5 |
+| j:\razer-shop-page\public\next.svg                                         | XML                |          1 |          0 |          0 |          1 |
+| j:\razer-shop-page\public\vercel.svg                                       | XML                |          1 |          0 |          0 |          1 |
+| j:\razer-shop-page\services\api.js                                         | JavaScript         |         12 |          0 |          4 |         16 |
+| j:\razer-shop-page\services\replaceNumber.js                               | JavaScript         |         14 |          0 |          4 |         18 |
+| j:\razer-shop-page\styles\Home.module.css                                  | CSS                |        195 |          3 |         32 |        230 |
+| j:\razer-shop-page\styles\fonts.css                                        | CSS                |         13 |          0 |          2 |         15 |
+| j:\razer-shop-page\styles\globals.css                                      | CSS                |         17 |          0 |          4 |         21 |
+| j:\razer-shop-page\styles\shopStyle.module.css                             | CSS                |          4 |          0 |          0 |          4 |
+| Total                                                                      |                    |      8,934 |         12 |        514 |      9,460 |
++----------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+

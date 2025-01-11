@@ -2,10 +2,19 @@
   position: absolute;
   width: 100%;
   height: 100px;
-  opacity: 0.5;
-  background-color: #000;
-  top: 116%;
+  background-color: rgba(0, 0, 0, 0.5);
   z-index: 100;
+  
+}
+
+
+.topSide {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 7px;
 }
 
 .socialIcons ul {
@@ -14,6 +23,48 @@
 }
 
 .socialIcons ul li {
-  padding: 5px;
+  margin: 5px 10px;
   list-style-type: none;
+}
+
+.socialIcons ul li:first-child {
+  margin: 5px 10px 5px 0;
+}
+
+.textSection {
+  color: #44D62C;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.textSection span {
+  line-height: 42px;
+}
+
+.bottomSide {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  line-height: 50px;
+  color: #999;
+  font-family: Roboto;
+  font-size: 12px;
+  border-top: 1px solid #555
+}
+
+.bottomSide ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.bottomSide ul li {
+  padding: 0 5px;
+}
+
+.bottomSide ul li:last-child {
+  padding-right: 0px;
 }

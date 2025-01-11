@@ -1,0 +1,122 @@
+.formSection h1 {
+  font-family: "RazerF5";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  color: #fff;
+  margin-top: 30px;
+}
+
+.input_container {
+  width: 100%;
+  margin-top: 40px;
+  position: relative;
+}
+
+
+.loginSection {
+  width: 415px;
+  height: 550px;
+  background-color: #000;
+  margin: auto;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 100px;
+}
+
+.formSection {
+  width: 370px;
+  margin: auto;
+}
+
+.forgotPass {
+  font-family: Roboto;
+  color: #999;
+  font-size: 14px;
+  margin-top: 16px;
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.forgotPass:hover {
+  color: #44D62C;
+}
+
+.loginBtn {
+  width: 100%;
+  height: 40px;
+  background-color: #44D62C;
+  margin-top: 50px;
+  border: none;
+}
+
+.singupSection {
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  font-family: Roboto;
+}
+
+.singupSection p:first-child {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.singupSection p {
+  font-weight: 500;
+  margin-top: 25px;
+  font-size: 16px;
+}
+
+.singupSection h3 {
+  width: 90%;
+  border-top: 1px solid #999;
+  color: #999;
+  font-size: 12px;
+  font-weight: 300;
+  margin: auto;
+  position: relative;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.singupSection h3 span {
+  position: absolute;
+  display: block;
+  left: 35%;
+  top: -10px;
+  background-color: #000;
+  padding: 0 10px;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 18px;
+  width: 90%;
+  margin: auto;
+  margin-top: 18px;
+}
+
+.items button {
+  width: 60px;
+  height: 38px;
+  border: none;
+  border-radius: 2px;
+}
+
+.items button span img {
+  width: 25px;
+  margin: auto;
+}
+
+.twitch {
+  background-color: #9146FF;
+}
+
+.wechat {
+  background-color: #07C160;
+}

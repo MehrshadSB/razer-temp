@@ -3,10 +3,10 @@ import { header } from "@/Constants/Const";
 import CartDisplay from "./CartDisplay";
 import { useCart } from "@/Context/CartProvider";
 
-function Header() {
-  const [cart] = useCart();
-  const cartItems = cart.selectedItems;
-
+function Header({ cookies }) {
+  const [state, dispatch] = useCart();
+  const uiCartItems = state.selectedItems;
+  
   return (
     <header className={style.header}>
       <nav className={style.navigator}>
@@ -30,17 +30,17 @@ function Header() {
               src="/Icons/shopping-cart.svg"
               className={`${style.cart} ${style.icons}`}
             />
-            {cartItems.length >= 1 ? (
-              <span className={style.itemsCounter}>{cartItems.length}</span>
+            {uiCartItems.length >= 1 ? (
+              <span className={style.itemsCounter}>{state.itemsCounter}</span>
             ) : null}
-            {cartItems.length >= 0 ? (
+            {uiCartItems.length >= 0 ? (
               <div className={style.cartDisplay}>
                 <img
                   className={style.arrowIcon}
                   src="/Icons/boxArrow.png"
                   alt="boxArrow"
                 />
-                <CartDisplay cart={cartItems} />
+                <CartDisplay cookies={cookies} />
               </div>
             ) : null}
           </li>

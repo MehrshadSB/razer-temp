@@ -3,10 +3,10 @@ import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 
-function Layout({ children, setLoginBtn, loginBtn }) {
+function Layout({ children, cookies, cart }) {
   return (
     <div>
-      <Header loginBtn={loginBtn} setLoginBtn={setLoginBtn} />
+      <Header cookies={cookies} cart={cart} />
       {children}
       <Footer />
     </div>

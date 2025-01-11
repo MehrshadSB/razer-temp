@@ -5,12 +5,15 @@
   cursor: pointer;
 }
 
+
 .icon {
   width: 28px;
+
 }
 
 .icons {
   padding: 0 !important;
+  width: 28px;
 }
 
 .footer {

@@ -4,8 +4,9 @@ import MultiPanel from "@/components/Module/MultiPanel/MultiPanel";
 import Slider from "@/components/Module/Slider/Slider";
 import Store from "@/components/Module/Store/Store";
 import style from "@/styles/shopStyle.module.css";
+import TileSlider from "../Module/TileSlider/TileSlider";
 
-function Shop({ products }) {
+function Shop({ products, cookies, cart }) {
   const freshOffTheLine = products.filter((product) =>
     product.tags.includes("FRESH OFF THE LINE"),
   );
@@ -23,9 +24,9 @@ function Shop({ products }) {
   );
 
   return (
-    <Layout>
+    <Layout cookies={cookies} cart={cart}>
       <div className={style.mainContainer}>
-        <Categorys/>
+        <Categorys />
         <Store
           products={freshOffTheLine}
           title={"FRESH OFF THE LINE"}
@@ -50,7 +51,7 @@ function Shop({ products }) {
             "Explore unique products and services only available at our official online store"
           }
         />
-        {/* <TileSlider /> */}
+        <TileSlider />
         <Store
           products={finalRoundGear}
           title={"FINAL ROUND GEAR"}

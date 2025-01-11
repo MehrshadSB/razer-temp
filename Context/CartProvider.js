@@ -79,7 +79,6 @@ function CartProvider({ children }) {
   const [cart, setCart] = useState([]);
   const [state, disPatch] = useReducer(reducer, initalState);
 
-  
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(state));
 

@@ -4,9 +4,10 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
+      <link rel="icon" href="/Icons/razer-logo.svg" sizes="any" />
       <body className="body">
-          <Main />
-          <NextScript />
+        <Main />
+        <NextScript />
       </body>
     </Html>
   );

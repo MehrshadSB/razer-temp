@@ -1,3 +1,5 @@
+import api from "@/services/api";
+
 const sumProducts = (products) => {
   const itemsCounter = products.reduce(
     (counter, product) => counter + product.quantity,
@@ -9,4 +11,8 @@ const sumProducts = (products) => {
   return { total, itemsCounter };
 };
 
-export { sumProducts };
+const signOutHandler = async () => {
+  await api("http://localhost:3000/api/logout");
+};
+
+export { sumProducts, signOutHandler };

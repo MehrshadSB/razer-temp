@@ -1,5 +1,5 @@
 .imageContainer {
-  min-width: 90vw;
+  max-width: 90vw;
   margin: auto;
   margin-top: 80px;
 }
@@ -15,7 +15,7 @@
   --swiper-navigation-color: #44D62C;
   --swiper-navigation-sides-offset: 50px;
   --swiper-navigation-size: 55px;
-  min-width: 90vw;
+  min-width: 90%;
   padding: 0;
   margin: auto;
   height: 300px;
@@ -41,25 +41,35 @@
 
 }
 
-@media screen and (max-width: 1200px) {
-  .swiper {
-    max-width: 100%;
-    margin: auto;
-    height: 100%;
+
+/* For mobile devices (up to 767px wide) */
+@media only screen and (max-width: 767px) {}
+
+/* For tablets (768px to 1024px wide) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .imageContainer {
+    min-width: 100%;
   }
 
-  .swiperSlide {
-    justify-content: end;
+  .images {
+    min-width: 100%;
+    object-fit: cover;
   }
+}
+
+/* For small laptops and desktops (1025px to 1440px wide) */
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
 
   .imageContainer {
-    width: 100%;
+    min-width: 100%;
   }
+
+  .images {
+    min-width: 100%;
+    object-fit: cover;
+  }
+
 }
 
-@media screen and (max-width: 1000px) {
-  
-  .images {
-    height: 400px;
-  }
-}
+/* For large desktops (1441px and up) */
+@media only screen and (min-width: 1536px) {}
